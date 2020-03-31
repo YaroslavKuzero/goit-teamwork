@@ -1,5 +1,16 @@
-$main-font-stack: 'Acrom', sans-serif;
-$policy-font-stack: 'Gilroy', sans-serif;
+// Fonts
+$acromlight: 'Acrom Light', sans-serif;
+$acromreg: 'Acrom Regular' , sans-serif;
+$acrommd: 'Acrom Medium' , sans-serif;
+$acrombold: 'Acrom Bold' , sans-serif;
+$acromexbold: 'Acrom Extra Bold', sans-serif;
+$gilroy: 'Gilroy Light', sans-serif;
+$minion: 'Minion Pro Regular', sans-serif;
+$futuramd:'Futura Medium', sans-serif;
+$futurabold: 'Futura Demi', sans-serif;
+
+
+// Colors
 $header-footer-bg-color: rgb(24, 28, 39);
 $text-header-color: rgb(255, 255, 255);
 $secondary-text-header-color: rgb(175, 176, 179);
@@ -21,8 +32,3 @@ $white-pseudo-text-color: rgb(247, 247, 247);
 $black-pseudo-text-color: rgba(0, 0, 0, 0.051);
 $placeholder-text-color: rgb(191, 191, 191);
 $policy-text-color: rgb(101, 102, 106);
-
-
-
-
-  
