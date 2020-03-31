@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 *,
@@ -10,8 +11,7 @@ html {
 
 body {
   font-family: 'Acrom Bold';
-  color: $txt-primary;
-  font-size: 14px;
+  color: $text-header-color;
 }
 
 img {
@@ -22,7 +22,15 @@ img {
 
 .container {
   margin: 0 auto;
-  width: 714px;
+  width: fontsz(446);
+
+  @media screen and (min-width: 768px){
+    width: fontsz(640);
+  }
+
+  @media screen and (min-width: 1200px){
+    width: fontsz(714);
+  }
 }
 
 .link {
