@@ -1,0 +1,67 @@
+//Для breakpoints
+@mixin screensize($range) {
+    $phone: 480px;
+    $tablet: 768px;
+    $desktop: 1200px;
+
+    @if $range == phone {
+      @media (min-width: $phone) { @content; }
+    } @else if $range == tablet {
+      @media (min-width: $tablet) { @content; }
+    } @else if $range == desktop {
+      @media (min-width: $desktop) { @content; }
+    }
+}
+
+  // usage
+//   .box {
+//     padding: 10px;
+    
+//     @include screensize(desktop) {
+//       padding: 20px;
+//     }
+//   }
+
+
+// Центрирование абсолютно позиционированных элементов
+@mixin сenter-xy($top: 50%, $left: 50%) {
+  position: absolute;
+  left: $left;
+  top: $top;
+  transform: translate(-$top, -$left);
+}
+
+@mixin сenter-x($left: 50%) {
+  position: absolute;
+  left: $left;
+  transform: translateX(-$left);
+}
+
+@mixin сenter-y($top: 50%) {
+  position: absolute;
+  top: $top;
+  transform: translateY(-$top);
+}
+
+// all - применит все
+// hor - flex и j-c: center
+// ver - flex и a-i: center
+@mixin center-flex($type: 'all') {
+  display: flex;
+  @if $type== 'all' {
+    justify-content: center;
+    align-items: center;
+  } @else if $type== 'hor' {
+    justify-content: center;
+  } @else if $type== 'ver' {
+    align-items: center;
+  }
+}
+
+// для background
+@mixin bg-img($path: '', $size: cover, $repeat: no-repeat, $pos: center) {
+  background-image: url($path);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $pos;
+}
