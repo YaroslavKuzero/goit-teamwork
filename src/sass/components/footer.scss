@@ -1,0 +1,164 @@
+.contacts{
+  background-color: $header-footer-bg-color;
+
+  &__container{
+    height: fontsz(104);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet{
+        height: fontsz(150);
+    }
+
+    @include desktop{
+        height: fontsz(166);
+    }
+
+    .media-wrapper{
+      display: flex;
+      justify-content: space-between;
+      flex-basis: 67%;
+
+      @include tablet{
+        flex-basis: 62.1875%;
+      }
+
+      .contacts__logo{
+        @include tablet{
+            flex-basis: 25%;
+          }
+      }
+    }
+    
+    .contacts__block{
+      flex-basis: 71.6666%;
+
+      @include tablet{
+        flex-basis: 50%;
+      }
+    }
+
+    .contacts__item{
+      width: 35.5140%;
+
+      @include tablet{
+        flex-basis: 50%;
+      }
+    }
+
+    .contacts__details{
+      display: flex;
+      justify-content: space-between;
+      font-style: normal;
+
+      .contacts__title{
+        font-family: $acromexbold;
+        font-size: fonsz(10);
+        color: $text-footer-color;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        margin-bottom: fontsz(6);
+
+        @include tablet{
+          font-size: fontsz(7.85);
+          line-height: fontsz(10.09);
+          margin-bottom: fontsz(10)
+        }
+
+        @include desktop{
+            font-size: fontsz(8.75);
+            line-height: fontsz(11.25);
+        }
+      }
+
+      .contacts__description{
+        margin: 0;
+        padding: 0;
+        font-family: $acromreg;
+        font-size: fontsz(9);
+        color: $text-footer-sec-color;
+        cursor: pointer;
+        transition: color 200ms linear;
+
+        &:hover, &:focus{
+          color: $third-mark-color
+        }
+
+        @include tablet{
+            font-size: fontsz(8);
+            line-height: fontsz(11.78);
+          }
+
+          @include desktop{
+            font-size: fontsz(8.75);
+            line-height: fontsz(13.13);
+        }
+      }
+    }
+  }
+
+  .social{
+    display: none;
+    font-family: $acromexbold;
+    font-size: fontsz(9);
+    line-height: fontsz(14.58);
+
+    &__link{
+    color: $text-footer-color;
+    transition: color 200ms linear;
+
+    &:hover{
+      color:$third-mark-color;
+    }
+    }
+
+    @include tablet{
+      display: flex;
+      flex-direction: column;
+      flex-basis: 25%;
+      align-items: flex-end;
+    }
+    @include desktop{
+        font-size: fontsz(10);
+        line-height: fontsz(16.25);
+    }
+  }
+
+  .button-__footer{
+    width: fontsz(120);
+    height: fontsz(20);
+    font-family: $acromexbold;
+    font-size: fontsz(9);
+    color:$text-footer-color;
+    text-transform: uppercase;
+    line-height: fontsz(18);
+    border: 1px solid #1b4371;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    transition: background 200ms linear;
+
+    &:hover{
+      background: $button-bg-color;
+    }
+
+    &:active{
+      background: $secondary-mark-color;
+    }
+
+    @include tablet{
+      font-size: fontsz(6.73);
+      width: fontsz(125);
+      height: fontsz(30);
+      line-height: fontsz(28);
+    }
+
+    @include desktop{
+        font-size: fontsz(7.5);
+        width: fontsz(138);
+      }
+
+  }
+}

@@ -10,25 +10,37 @@ $futuramd:'Futura Medium', sans-serif;
 $futurabold: 'Futura Demi', sans-serif;
 
 
-// Colors
-$header-footer-bg-color: rgb(24, 28, 39);
+// Colors texts
 $text-header-color: rgb(255, 255, 255);
 $secondary-text-header-color: rgb(175, 176, 179);
-$text-footer-color: rgb(255, 255, 255);
-$text-price-color: rgb(255, 255, 255);
-$button-bg-color: rgb(255, 107, 8);
-$orange-text-color: rgb(255, 107, 8);
 $main-text-color: rgb(63, 65, 68);
+
 $main-heading-color: rgb(0, 0, 0);
 $secondary-heading-color: rgb(255, 255, 255);
+
+$text-footer-color: rgb(255, 255, 255);
+$text-footer-sec-color: rgb(162, 162, 162);
+$text-price-color: rgb(255, 255, 255);
+$orange-text-color: rgb(255, 107, 8);
+$policy-text-color: rgb(101, 102, 106);
+$placeholder-text-color: rgb(191, 191, 191);
+
+//Text background colors
 $main-text-bg-color: rgb(0, 0, 0);
 $secondary-text-bg-color: rgb(22, 235, 254);
 $third-text-bg-color: rgb(255, 107, 8);
-$main-mark-color: rgb(0, 0, 0);
-$secondary-mark-color: rgb(22, 235, 254);
-$third-mark-color: rgb(255, 107, 8);
+
+//Colors for pseudo elements
 $header-pseudo-text-color: rgba(0, 0, 0, 0.2);
 $white-pseudo-text-color: rgb(247, 247, 247);
 $black-pseudo-text-color: rgba(0, 0, 0, 0.051);
-$placeholder-text-color: rgb(191, 191, 191);
-$policy-text-color: rgb(101, 102, 106);
+
+//Marks colors
+$main-mark-color: rgb(0, 0, 0);
+$secondary-mark-color: rgb(22, 235, 254);
+$third-mark-color: rgb(255, 107, 8);
+
+//Background colors
+$header-footer-bg-color: rgb(24, 28, 39);
+$button-bg-color: rgb(255, 107, 8);
+$disclaimer-bg-color: rgb(32, 32, 32);
