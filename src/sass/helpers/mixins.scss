@@ -1,27 +1,15 @@
 //Для breakpoints
-@mixin screensize($range) {
-    $phone: 480px;
-    $tablet: 768px;
-    $desktop: 1200px;
-
-    @if $range == phone {
-      @media (min-width: $phone) { @content; }
-    } @else if $range == tablet {
-      @media (min-width: $tablet) { @content; }
-    } @else if $range == desktop {
-      @media (min-width: $desktop) { @content; }
-    }
+@mixin mobile {
+  @media screen and (min-width: 480px) { @content; }
 }
 
-  // usage
-//   .box {
-//     padding: 10px;
-    
-//     @include screensize(desktop) {
-//       padding: 20px;
-//     }
-//   }
+@mixin tablet {
+  @media screen and (min-width: 768px) { @content; }
+}
 
+@mixin desktop {
+  @media screen and (min-width: 1200px) { @content; }
+}
 
 // Центрирование абсолютно позиционированных элементов
 @mixin сenter-xy($top: 50%, $left: 50%) {
