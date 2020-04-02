@@ -1,13 +1,40 @@
 .doit-go{
   position: relative;
-  padding-top: fontsz(82);
+  padding-top: fontsz(23);
+  
+
+  @include tablet{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: fontsz(96);
+  }
+
+  @include desktop{
+    padding-bottom: fontsz(96);
+  }
 }
 .bg-title{
+  margin: 0;
+  padding: 0;
   position: absolute;
   transform: rotate(90deg);
-  top: 0;
+  top: fontsz(17);
   left: 0;
+  font-family: $acromexbold;
+  font-size: fontsz(101.73);
+  color: $white-pseudo-text-color;
   text-transform: uppercase;
+  z-index: -1;
+
+  @include tablet{
+    top: fontsz(47);
+    left: fontsz(184);
+  }
+
+  @include desktop{
+    top: fontsz(50);
+    left: fontsz(224);
+  }
 }
 
 .doit-go__section19{
@@ -17,55 +44,207 @@
   align-items: center;
   margin-bottom: fontsz(42);
 
+  @include tablet{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 0;
+    flex-basis: 50%;
+  }
+
+
   .doit-go__subtitle{
-    font-family: $acrombold;
-    font-size: fontsz(60);
-    line-height: fontsz(24);
-    text-transform: uppercase;
+    @extend %heading-section;
     margin-bottom: fontsz(18);
+
+    @include tablet{
+      font-size: fontsz(27);
+      line-height: fontsz(33.65);
+      margin-bottom: fontsz(24);
+    }
+
+    @include desktop {
+      font-size: fontsz(30);
+      line-height: fontsz(37.5);
+      margin-bottom: fontsz(28);
+    }
   }
 
   .doit-go__invitation{
+    margin: 0;
     font-family: $acrommd;
     font-size: fontsz(13.5);
     line-height: fontsz(19.5);
     margin-bottom: fontsz(34);
+    padding-left: fontsz(28);
+    position: relative;
+
+    @include tablet{
+    margin-bottom:fontsz(30);
+    font-size: fontsz(9);
+    line-height: fontsz(13.46);
+    padding-left: fontsz(47);
+  }
+
+  @include desktop{
+    margin-bottom:fontsz(34);
+    font-size: fontsz(10);
+    line-height: fontsz(15);
+    padding-left: fontsz(52);
+  }
+
+
+    &::before{
+      content: " ";
+      display: inline-block;
+      background-color: $main-mark-color;
+      width: fontsz(14);
+      height: fontsz(4);
+      position: absolute;
+      top: fontsz(10);
+      left: 0;
+
+      @include tablet{
+        width: fontsz(29);
+        height: fontsz(5);
+      }
+
+      @include desktop{
+        width: fontsz(32);
+      }
+    }
   }
 
   .button__doit-go{
-    font-family: $acromexbold;
+    @extend %button-orange;
     font-size: fontsz(10.06);
     width: fontsz(218);
     height: fontsz(34);
-    text-transform: uppercase;
-    background-color: $button-bg-color;
-    color: $text-header-color;
-    border: none;
+
+    @include tablet {
+      width: fontsz(147);
+      height: fontsz(29);
+      font-size: fontsz(7);
+    }
+
+    @include desktop {
+      width: fontsz(164);
+      height: fontsz(32);
+      font-size: fontsz(8);
+    }
   }
 }
 
 .text__section19{
   padding: 0 fontsz(70);
-  letter-spacing: 0.00714rem;
+  padding-bottom: fontsz(42);
+  font-size: fontsz(13.5);
+
+  @include tablet{
+    padding-left: fontsz(64);
+    padding-right: fontsz(18);
+    padding-bottom: 0;
+    position: relative;
+    flex-basis: 50%;
+  }
+
+  @include desktop {
+    padding-left: fontsz(73);
+    padding-right: fontsz(21);
+  }
+
 
   .ps{
     font-family: $acromexbold;
     font-size: fontsz(20);
     line-height: fontsz(24);
     color: $main-heading-color;
+
+    @include tablet{
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: fontsz(17);
+      line-height: fontsz(20.19);
+    }
+
+    @include desktop{
+      font-size: fontsz(19);
+      line-height: fontsz(22.5);
+    }
   }
 
-  doit-go__text--bold{
+  .doit-go__text{
+    margin: 0;
+    margin-bottom: fontsz(26);
+
+    @include tablet {
+      margin-bottom: fontsz(20);
+    }
+
+    @include desktop {
+      margin-bottom: fontsz(26);
+    }
+  }
+
+  .doit-go__text--bold{
     font-family: $acrombold;
-    font-size: fontsz(13.5);
-    line-height: fontsz(19.5);
     color: $main-heading-color;
+    line-height: fontsz(19.5);
+
+    @include tablet{
+    font-size: fontsz(9);
+    line-height: fontsz(13.46);
+    }
+
+    @include desktop{
+      font-size: fontsz(10);
+      line-height: fontsz(15);
+      }
   }
 
   .doit-go__text--normal{
     font-family: $acromreg;
-    font-size: fontsz(13.5);
-    line-height: fontsz(19.5);
     color:$main-text-color;
+    line-height: fontsz(19.5);
+
+    @include tablet{
+      font-size: fontsz(8);
+      line-height: fontsz(11.78);
+      }
+
+    @include desktop{
+      font-size: fontsz(9);
+      line-height: fontsz(13.3);
+  }
+
+  .doit-go__text--mixed{
+    line-height: fontsz(19.5);
+
+    @include tablet{
+      line-height: fontsz(11.78);
+    }
+
+    @include desktop{
+      line-height: fontsz(13.3);
+    }
+  }
+  }
+
+  .choice{
+    display: block;
+    font-family: $acrommd;
+    color: $orange-text-color;
+    text-align: right;
+    line-height: fontsz(19.5);
+
+    @include tablet{
+      font-size: fontsz(9);
+      line-height: fontsz(13.46);
+      }
+
+    @include desktop {
+      font-size: fontsz(10);
+      line-height: fontsz(15);
+    }
   }
 }
