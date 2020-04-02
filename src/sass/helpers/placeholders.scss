@@ -1,0 +1,16 @@
+%button-orange{
+    font-family: $acromexbold;
+    text-transform: uppercase;
+    background-color: $button-bg-color;
+    color: $text-header-color;
+    border: none;
+    box-shadow: 0px 5px 6px 0px $shadow-btn-color;
+}
+
+%heading-section{
+    font-family: $acrombold;
+    font-size: fontsz(18);
+    line-height: fontsz(24);
+    text-transform: uppercase;
+    margin: 0;
+}
