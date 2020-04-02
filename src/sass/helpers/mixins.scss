@@ -1,14 +1,20 @@
 //Для breakpoints
 @mixin mobile {
-  @media screen and (min-width: 480px) { @content; }
+  @media screen and (min-width: 480px) {
+    @content;
+  }
 }
 
 @mixin tablet {
-  @media screen and (min-width: 768px) { @content; }
+  @media screen and (min-width: 768px) {
+    @content;
+  }
 }
 
 @mixin desktop {
-  @media screen and (min-width: 1200px) { @content; }
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
 }
 
 // Центрирование абсолютно позиционированных элементов
@@ -34,22 +40,27 @@
 // all - применит все
 // hor - flex и j-c: center
 // ver - flex и a-i: center
-@mixin center-flex($type: 'all') {
+@mixin center-flex($type: "all") {
   display: flex;
-  @if $type== 'all' {
+  @if $type== "all" {
     justify-content: center;
     align-items: center;
-  } @else if $type== 'hor' {
+  } @else if $type== "hor" {
     justify-content: center;
-  } @else if $type== 'ver' {
+  } @else if $type== "ver" {
     align-items: center;
   }
 }
 
 // для background
-@mixin bg-img($path: '', $size: cover, $repeat: no-repeat, $pos: center) {
+@mixin bg-img($path: "", $size: cover, $repeat: no-repeat, $pos: center) {
   background-image: url($path);
   background-size: $size;
   background-repeat: $repeat;
   background-position: $pos;
+}
+
+// применит transition с указанными параметрами
+@mixin transition($transition: all 0.2s linear) {
+  transition: $transition;
 }

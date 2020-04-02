@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Acrom Bold';
+  font-family: "Acrom Bold";
   color: $main-heading-color;
 }
 
@@ -22,14 +22,15 @@ img {
 
 .container {
   margin: 0 auto;
-  width: fontsz(446);
+  width: fontsz(480);
+  padding: 0 fontsz(16);
 
-  @media screen and (min-width: 768px){
-    width: fontsz(640);
+  @media screen and (min-width: 768px) {
+    width: fontsz(672);
   }
 
-  @media screen and (min-width: 1200px){
-    width: fontsz(714);
+  @media screen and (min-width: 1200px) {
+    width: fontsz(746);
   }
 }
 
@@ -45,8 +46,8 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
