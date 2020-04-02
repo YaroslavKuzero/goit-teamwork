@@ -1,0 +1,91 @@
+.promo {
+  background: #181c27;
+  min-height: 612px;
+  background-position: center;
+  background-size: cover;
+
+  &__wrapper {
+    min-height: 612px;
+    background-image: url(../../images/blot.png);
+    margin: 0 auto;
+    width: 446px;
+    padding: 60px 50px 40px;
+    position: relative;
+    background-position: center;
+  }
+
+  &__first-section {
+    padding-bottom: 75px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__second-section {
+    padding-top: 75px;
+  }
+
+  &__title {
+    margin: 0 0 34px;
+    font-size: 30px;
+    line-height: 39px;
+    color: #ffffff;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  &__dscr {
+    margin: 0;
+    font-size: 12px;
+    line-height: 20px;
+    color: #afb0b3;
+  }
+
+  &__banner {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    line-height: 70px;
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+.Shape_7_copy_3 {
+  border-width: 0.313px;
+  border-color: rgb(255, 255, 255);
+  border-style: dotted;
+  opacity: 0.2;
+  position: absolute;
+  left: 311px;
+  top: -2px;
+  width: 1px;
+  height: 613px;
+  z-index: 11;
+}
+
+.GoIt_ {
+  font-size: 307.438px;
+  font-family: "Myriad Pro";
+  color: rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  line-height: 0.585;
+  text-align: center;
+  -moz-transform: matrix(0.39063155892011, 0, 0, 0.39033481540362, 0, 0);
+  -webkit-transform: matrix(0.39063155892011, 0, 0, 0.39033481540362, 0, 0);
+  -ms-transform: matrix(0.39063155892011, 0, 0, 0.39033481540362, 0, 0);
+  position: absolute;
+  left: -81.617px;
+  top: 209.074px;
+  z-index: 6;
+}
