@@ -1,4 +1,5 @@
 <section class="promo">
+  <h1 class="promo__banner">GoIt</h1>
   <div class="container promo__pos">
     <div class="promo__borders">
       <div class="promo__borders-left"></div>
@@ -7,7 +8,7 @@
     <div class="promo__content">
       <div class="promo__first-section">
         <h2 class="promo__title">[ Пошаговый Видео-курс_ ]</h2>
-        <h3 class="promo__subtitle--arrows">
+        <h3 class="promo__subtitle-arrows">
           «Старт в карьере web-разработчика с 0» для тех, кто давно хотел
           зарабатывать больше работая в it, но не знал, где реализовать себя
         </h3>
@@ -21,20 +22,45 @@
           приятному графику над интересными задачами и получая доход в $$$
         </p>
       </div>
-    </div>   
-    <h1 class="promo__banner">GoIt</h1>    
-    <button class="section-btn" type="button">Приобрести курс</button>
-    <ul class="list promo-overlay">
-      <li class="promo-overlay__item">
-        <svg class="promo-overlay__icon">
-          <use href="./images/icon/sprite.svg#icon-facebook"></use>
-        </svg>
-      </li>
-      <li class="promo-overlay__item">
-        <svg class="promo-overlay__icon">
-          <use href="./images/icon/sprite.svg#icon-twitter"></use>
-        </svg>
-      </li>
-    </ul>
+    </div>
+    <button class="promo__section-btn" type="button">Приобрести курс</button>
+    <picture class="promo__banner-img">
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/desktop/banner-d.png    1x,
+          ./images/desktop/banner-d@2x.png 2x
+        "
+      />
+      <img
+        srcset="
+          ./images/tablet/banner-t.png    381w,
+          ./images/tablet/banner-t@2x.png 762w
+        "
+        sizes="381px"
+        src="./images/tablet/banner-t.png"
+        alt="happy dudes"
+        height="420"
+      />
+    </picture>
   </div>
+  <ul class="list promo-overlay">
+    <li class="promo-overlay__item promo-overlay__item--icon-facebook">
+      <svg class="promo-overlay__icon">
+        <use href="./images/icon/sprite.svg#icon-facebook"></use>
+      </svg>
+    </li>
+    <li class="promo-overlay__item promo-overlay__item--icon-twitter">
+      <svg class="promo-overlay__icon">
+        <use href="./images/icon/sprite.svg#icon-twitter"></use>
+      </svg>
+    </li>
+    <li class="promo-overlay__item promo-overlay__item--01">
+      <span>01</span>
+    </li>
+    <li class="promo-overlay__item promo-overlay__item--02">
+      <span>02.</span>
+    </li>
+    <li class="promo-overlay__item promo-overlay__item--img"></li>
+  </ul>
 </section>
