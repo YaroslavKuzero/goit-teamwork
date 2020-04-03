@@ -1,0 +1,128 @@
+.plus-take-bonuses{
+  padding-top: fontsz(38);
+
+  .take-bonus__wrapper{
+    padding: 0 fontsz(70);
+
+    @include tablet {
+      padding-left: fontsz(64);
+      padding-right: fontsz(18);
+    }
+    
+    @include desktop {
+      padding-left: fontsz(73);
+      padding-right: fontsz(21);
+    }
+
+    .take-bonus__subtitle{
+      @extend %header;
+      color: $text-header-color;
+      background: $main-text-bg-color;
+      display: inline-block;
+      margin: 0 auto;
+      margin-bottom: fontsz(23);
+    }
+
+    .take-bonus__invitation{
+      margin: 0;
+      font-family: $acrommd;
+      font-size: fontsz(13.5);
+      line-height: fontsz(19.5);
+      width: fontsz(246);
+      margin: 0 auto;
+      margin-bottom: fontsz(58);
+      padding-left: fontsz(39);
+      position: relative;
+    
+        @include tablet{
+        margin-bottom:fontsz(30);
+        font-size: fontsz(9);
+        line-height: fontsz(13.46);
+        padding-left: fontsz(47);
+      }
+    
+      @include desktop{
+        margin-bottom:fontsz(34);
+        font-size: fontsz(10);
+        line-height: fontsz(15);
+        padding-left: fontsz(52);
+      }
+    
+    
+        &::before{
+          content: " ";
+          display: inline-block;
+          background-color: $main-mark-color;
+          width: fontsz(14);
+          height: fontsz(4);
+          position: absolute;
+          top: fontsz(10);
+          left: 0;
+    
+          @include tablet{
+            width: fontsz(29);
+            height: fontsz(5);
+          }
+    
+          @include desktop{
+            width: fontsz(32);
+          }
+        }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+//   .input-block {
+//     margin: 0;
+//     padding: 0;
+//     margin-bottom: 22px;
+//     width: 730px;
+  
+//     .input-list {
+//       display: flex;
+//       justify-content: space-between;
+  
+//       .input-item {
+//         border: none;
+  
+//         &::placeholder {
+//           font-family: 'Acrom', serif;
+//           text-transform: uppercase;
+//         }
+//       }
+//     }
+
+//     .submit-btn {
+    // @extend %button-orange
