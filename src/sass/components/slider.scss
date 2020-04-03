@@ -1,0 +1,162 @@
+.slider{
+    @media screen and (max-width: 767px) {
+        width: 21rem;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 768px) {
+        width: 30rem;
+        margin-left: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 33.57rem;
+    }
+    &__item {
+        box-shadow: 0rem 0.57rem 1rem 0rem rgba(0, 0, 0, 0.15);
+        color: $main-heading-color;
+        display: flex;
+        position: relative;
+        padding-left: 1.43rem;
+        padding-top: 1.43rem;
+        margin-bottom: 0;
+        font-size: 0.39rem;
+        margin-top: 0;
+        @media screen and (min-width: 768px) {
+            font-size: 0.57rem;
+            padding-left: 2.14rem;
+            padding-top: 2.14rem;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 0.625rem;
+            padding-left: 2.35rem;
+            padding-top: 2.35rem;
+        }
+        &--heading {
+            text-transform: uppercase;
+            @media screen and (max-width: 767px) {
+                font-size: 0.39rem;
+            }
+            @media screen and (min-width: 768px) {
+                font-size: 0.55rem;
+            }
+        }
+        &--text{
+            margin: 0;
+            color: $main-text-color;
+            margin-bottom: 1.43rem;
+        }
+    }
+}
+.slider-nav {
+    display: flex;
+    padding-bottom: 3.79rem;
+    &__button-list {
+        display: flex;
+        flex-basis: 16.57rem;
+        margin: 0;
+        padding: 0;
+        justify-content: flex-end;
+        &--item:nth-child(1) {
+            margin-right: 0.07rem;
+        }
+        @media screen and (min-width: 768px) {
+            flex-basis: 25.7rem;
+        }
+        @media screen and (min-width: 768px) {
+            flex-basis: 29.7rem;
+        }
+    }
+    &__pagination {
+        color: $main-mark-color;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 0;
+        margin-top: 0.64rem;
+        padding: 0;
+        flex-basis: 4.43rem;
+        @media screen and (min-width: 768px) {
+            flex-basis: 6.29rem;
+        }
+        @media screen and (min-width: 768px) {
+            flex-basis: 7.43rem;
+        }
+        &-button:nth-child(-n+2) {
+            margin-right: 0.43rem;
+        }
+        &--active {
+            font-size: 0.39rem;
+            text-decoration: line-through;
+            @media screen and (min-width: 768px) {
+                font-size: 0.57rem;
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 0.625rem;
+            }
+        }
+        &--static {
+            font-size: 0.195rem;
+            @media screen and (min-width: 768px) {
+                font-size: 0.285rem;
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 0.313rem;
+            }
+        }
+    }
+}
+
+.slider__button {
+    border: none;
+    background-color: $main-mark-color;
+    width: 1.07rem;
+    height: 1.07rem;
+    @media screen and (min-width: 768px) {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+.reviewer {
+    width: 3.93rem;
+    margin-right: 1.43rem;
+    @media screen and (min-width: 768px) {
+        width: 5.64rem;
+    }
+}
+.review {
+    width: 13.21rem;
+    padding-right: 1.29rem;
+    height: 15.21rem;
+    overflow-y: scroll;
+    @media screen and (min-width: 768px) {
+        width: 19.3rem;
+        height: 21.86rem;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 22.7rem;
+        height: 21.86rem;
+    }
+    &::-webkit-scrollbar {
+        width: 1px;
+        height: 100%;
+    }
+    &::-webkit-scrollbar-track {  
+        background-color: rgb(244, 244, 244);
+        padding-left: 30px;
+    }
+    &::-webkit-scrollbar-thumb { 
+        height: 2rem; 
+        background-color: rgb(0, 0, 0); 
+        border-radius: 0.21rem;     
+    }  
+}
+.slider-icon {
+    fill: rgb(255, 255, 255);
+    width: 0.29rem;
+    height: 1rem;
+    @media screen and (min-width: 768px) {
+        width: 0.286rem;
+        height: 0.57rem;
+    }
+}
+  
+  

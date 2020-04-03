@@ -1,0 +1,74 @@
+.section-5 {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        &__header {
+            width: 14rem;
+        }
+
+    }
+}
+.slider-section {
+    color: $main-heading-color;
+    padding-left: 0;
+    @media screen and (max-width: 767px) {
+        width: 20rem;
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: 2.79rem;
+    }
+    @media screen and (min-width: 768px) {
+        width: 12.14rem;
+        margin: 0;
+    }
+    @media screen and (min-width: 768px) {
+        width: 13.14rem;
+    }
+    &__heading {
+        @extend %header;
+        margin-bottom: 0;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 2.71rem;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 3rem;
+        }
+        &--wrap {
+            display: block;
+        }
+    }
+    &__text {
+        font-family: $acromreg;
+        line-height: 1.39rem;
+        position: relative;
+        @media screen and (min-width: 768px) {
+            font-size: 0.64rem;
+            padding-left: 3.36rem;
+            line-height: 1rem;
+            margin: 0;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 0.71rem;
+            line-height: 1.07rem;
+        }
+        &--text-bg {
+            background-color: $main-text-bg-color;
+            color: $text-header-color;
+        &::before {
+            position: absolute;
+            top: 0.45rem;
+            left: -2.79rem;
+            display: block;
+            content: '';
+            width: 1.43rem;
+            height: 0.29rem;
+            background-color: $main-heading-color;
+            @media screen and (min-width: 768px) {
+                left: 0rem;
+                width: 29px;
+                height: 5px;
+            }
+        }
+        }
+    }
+}
