@@ -2,7 +2,7 @@
   width: 100%;
   position: fixed;
   background-color: rgba(23, 27, 38, 0.2);
-  z-index: 10;
+  z-index: 100;
 }
 
 .page-nav {
@@ -15,11 +15,11 @@
   align-items: center;
 
   @include tablet {
-    padding: fontsz(20) fontsz(40);
+    padding: fontsz(20) fontsz(65);
   }
 
   @include desktop {
-    padding: fontsz(22) fontsz(50);
+    padding: fontsz(24) fontsz(38);
   }
 
   &__list {
@@ -59,12 +59,16 @@
     z-index: 4;
 
     @include tablet {
-      right: fontsz(40);
+      right: fontsz(65);
       width: 300px;
       background-color: transparent;
       text-align: right;
       text-shadow: #181c27 1px 1px 3px;
       padding-top: fontsz(30);
+    }
+
+    @include desktop {
+      right: fontsz(38);
     }
   }
 
@@ -79,25 +83,6 @@
   &__link {
     color: $text-header-color;
     @include transition;
-  }
-}
-
-.social {
-  display: flex;
-  justify-content: space-between;
-  width: fontsz(50);
-  margin: 0 auto;
-  text-decoration: none;
-
-  &__link {
-    line-height: 0;
-  }
-
-  &__icon {
-    width: fontsz(16);
-    height: fontsz(16);
-    padding: 0;
-    fill: $text-header-color;
   }
 }
 

@@ -22,15 +22,14 @@ img {
 
 .container {
   margin: 0 auto;
-  width: fontsz(480);
-  padding: 0 fontsz(16);
+  width: fontsz(448);
 
   @media screen and (min-width: 768px) {
-    width: fontsz(672);
+    width: fontsz(640);
   }
 
   @media screen and (min-width: 1200px) {
-    width: fontsz(746);
+    width: fontsz(714);
   }
 }
 
