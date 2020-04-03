@@ -18,3 +18,12 @@
         content: '\0020 \005D';
     }
 }
+
+%button-orange {
+    font-family: $acromexbold;
+    text-transform: uppercase;
+    background-color: $button-bg-color;
+    color: $text-header-color;
+    border: none;
+    box-shadow: 0px 5px 6px 0px $shadow-btn-color;
+}

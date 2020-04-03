@@ -1,0 +1,57 @@
+.disclaimer{
+  background-color: $disclaimer-bg-color;
+  border-top: solid 1px $policy-text-color;
+  height: fontsz(24);
+
+  @include tablet{
+    height: fontsz(34);
+  }
+
+  @include desktop{
+    height: fontsz(38);
+  }
+
+  &__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fontsz(300);
+
+    @include tablet{
+      width: 47.6563%;
+    }
+
+    @include desktop{
+      width: 47.6190%;
+    }
+  }
+
+  &__link{
+    font-family: $acromlight;
+    color: $policy-text-color;
+    font-size: fontsz(6);
+    line-height: fontsz(24);
+    transition: color 200ms linear;
+
+    &:hover{
+      color: rgb(255, 107, 8);
+    }
+
+    @include tablet{
+      font-family: $gilroy;
+      line-height: fontsz(34);
+      font-size: fontsz(6.87);
+    }
+
+    @include desktop{
+      line-height: fontsz(38);
+      font-size: fontsz(7.5);
+    }
+  }
+}
