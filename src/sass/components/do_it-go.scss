@@ -53,7 +53,7 @@
 
 
   .doit-go__subtitle{
-    @extend %heading-section;
+    @extend %header;
     margin-bottom: fontsz(18);
 
     @include tablet{
