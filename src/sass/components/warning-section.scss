@@ -1,0 +1,114 @@
+.warning-section {
+    margin-bottom: fontsz(70);
+    @include tablet {
+        display: flex;
+        margin-bottom: fontsz(100);
+    }
+}
+.warning-section-image {
+    position: relative;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @include tablet {
+        flex-basis: fontsz(287);
+        margin-right: auto;
+    }
+    &__photo {
+        @include tablet {
+        position: absolute;
+        bottom: 9%;
+        transform: scale(1.15);
+        }
+    }
+    &__text {
+        @include tablet {
+            position: absolute;
+            z-index: -1;
+            text-transform: uppercase;
+            font-size: fontsz(140);
+            font-family: $acromexbold;
+            color: $black-pseudo-text-color;
+            transform: rotate(90deg);
+        }
+        @include desktop {
+            font-size: fontsz(156);
+        }
+    }
+}
+.list-section {
+    flex-basis: fontsz(348);
+    margin-left: auto;
+    justify-content: start;
+}
+.warning-section-head {
+    width: fontsz(280);
+    margin: 0 auto;
+    margin-bottom: fontsz(40);
+    @include tablet {
+        width: fontsz(336);
+        padding: 0;
+    }
+    @include desktop {
+        width: fontsz(373);
+    }
+    &__header {
+        @extend %header;
+        margin-bottom: fontsz(23);
+    }
+    &__description {
+        @extend %header-description;
+        @include tablet {
+            &--block {
+                display: block;
+            }
+        }
+    }
+}
+.warning-section-list {
+    width: fontsz(307);
+    margin: 0 auto;
+    padding: 0;
+    @include tablet {
+        width: fontsz(307);
+    }
+    @include desktop {
+        width: fontsz(333);
+    }
+    &__item {
+        position: relative;
+    }
+    &__header {
+        font-family:$acromexbold;
+        font-size: fontsz(13);
+        line-height: fontsz(20);
+        text-transform: uppercase;
+        @include tablet {
+            font-size: fontsz(9);
+            line-height: fontsz(15);
+        }
+        @include desktop {
+            font-size: fontsz(10);
+            line-height: fontsz(16);
+        }
+        &::before {
+            position: absolute;
+                top: 0.45rem;
+                left: -2.79rem;
+                display: block;
+                content: '';
+                width: fontsz(7);
+                height: fontsz(7);
+                background-color: $main-heading-color;
+        }
+    }
+    &__list {
+        font-family:$acromreg;
+        font-size: fontsz(13);
+    }
+    @include tablet {
+        margin-right: 0;
+    }
+}
+
+  
