@@ -61,6 +61,14 @@
     border-left: 1px dashed rgba(255, 255, 255, 0.05);
     border-right: 1px dashed rgba(255, 255, 255, 0.05);
     z-index: 2;
+
+    @include tablet {
+      min-height: fontsz(475);
+    }
+
+    @include desktop {
+      min-height: fontsz(531);
+    }
   }
 
   &__content {
@@ -88,10 +96,7 @@
 
     @include tablet {
       padding: 0;
-    }
-
-    @include desktop {
-      // padding: fontsz(96) 0 fontsz(30);
+      text-align: left;
     }
   }
 
@@ -99,12 +104,7 @@
     padding-top: fontsz(75);
 
     @include tablet {
-      padding: 0;
-      // width: fontsz(150);
-    }
-
-    @include desktop {
-      // width: fontsz(165);
+      padding-top: fontsz(8);
     }
   }
 
@@ -127,6 +127,79 @@
     }
   }
 
+  &__title-part {
+    @include tablet {
+      display: block;
+      position: relative;
+    }
+
+    &--second {
+      @include tablet {
+        width: fontsz(230);
+        padding-right: fontsz(45);
+      }
+
+      @include desktop {
+        width: fontsz(256);
+        padding-right: fontsz(50);
+      }
+
+      &::after {
+        @include tablet {
+          display: block;
+          position: absolute;
+          content: "";
+          width: fontsz(45);
+          height: fontsz(7);
+          background-color: $text-header-color;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+        }
+
+        @include desktop {
+          width: fontsz(50);
+          height: fontsz(8);
+        }
+      }
+    }
+
+    &--third {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &--fourth {
+      @include tablet {
+        padding-left: fontsz(80);
+      }
+
+      @include desktop {
+        padding-left: fontsz(88);
+      }
+
+      &::before {
+        @include tablet {
+          display: block;
+          position: absolute;
+          content: "";
+          width: fontsz(56);
+          height: fontsz(7);
+          background-color: $text-header-color;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+
+        @include desktop {
+          width: fontsz(62);
+          height: fontsz(8);
+        }
+      }
+    }
+  }
+
   &__subtitle-arrows {
     position: relative;
     margin: 0;
@@ -135,11 +208,15 @@
     color: $text-header-color;
 
     @include tablet {
+      margin-left: 56px;
+      width: 174px;
       font-size: fontsz(8);
       line-height: fontsz(13);
     }
 
     @include desktop {
+      margin-left: 62px;
+      width: 194px;
       font-size: fontsz(9);
       line-height: fontsz(15);
     }
@@ -150,29 +227,29 @@
       position: absolute;
       font-family: $acromexbold;
       font-size: fontsz(21);
-      line-height: fontsz(12);
+      line-height: fontsz(20);
       color: $arrows-color;
 
       @include tablet {
         font-size: fontsz(13);
-        line-height: fontsz(17);
+        line-height: fontsz(13);
       }
 
-      @include tablet {
+      @include desktop {
         font-size: fontsz(15);
-        line-height: fontsz(19);
+        line-height: fontsz(15);
       }
     }
 
     &::before {
       content: "<";
       left: fontsz(-18);
-      top: fontsz(4);
+      top: 0;
     }
 
     &::after {
       content: "/>";
-      bottom: fontsz(4);
+      bottom: 0;
       right: fontsz(-28);
     }
   }
@@ -229,6 +306,62 @@
       z-index: 3;
     }
   }
+
+  &__section-btn {
+    @extend %button-orange;
+
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: fontsz(218);
+    height: fontsz(54);
+    font-size: fontsz(12);
+    line-height: fontsz(18);
+    font-family: $acromexbold;
+    z-index: 10;
+
+    &:hover {
+      background-color: rgb(23, 236, 255);
+      box-shadow: 0px 5px 6px 0px rgba(23, 236, 255, 0.26);
+
+      @include tablet {
+        box-shadow: 0px 7px 10px 0px rgba(23, 236, 255, 0.26);
+      }
+
+      @include desktop {
+        box-shadow: 0px 9px 13px 0px rgba(23, 236, 255, 0.26);
+      }
+
+      &:active {
+        background-color: rgb(6, 164, 178);
+        box-shadow: 0px 5px 6px 0px rgba(6, 164, 178, 0.26);
+
+        @include tablet {
+          box-shadow: 0px 7px 10px 0px rgba(6, 164, 178, 0.26);
+        }
+
+        @include desktop {
+          box-shadow: 0px 9px 13px 0px rgba(6, 164, 178, 0.26);
+        }
+      }
+    }
+
+    @include tablet {
+      margin-left: fontsz(56);
+      width: fontsz(109);
+      height: fontsz(28);
+      font-size: fontsz(7);
+      line-height: fontsz(10);
+    }
+
+    @include desktop {
+      margin-left: fontsz(62);
+      width: fontsz(122);
+      height: fontsz(31);
+      font-size: fontsz(7);
+      line-height: fontsz(11);
+    }
+  }
 }
 
 .promo-overlay {
@@ -237,6 +370,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  color: $text-header-color;
 
   @include tablet {
     min-height: fontsz(164);
@@ -256,12 +390,6 @@
     @include tablet {
       display: block;
     }
-
-    &--img {
-      right: 0;
-      bottom: 0;
-      z-index: 3;
-    }
   }
 
   &__icon {
@@ -270,15 +398,70 @@
     padding: 0;
     fill: $text-header-color;
   }
-}
 
-.promo__section-btn {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  width: 218px;
-  height: 54px;
-  filter: drop-shadow(0px 5px 3px rgba(196, 87, 15, 0.26));
-  background-color: #ff6b08;
-  z-index: 10;
+  &__item--icon-facebook {
+    top: 0;
+    right: fontsz(100);
+
+    @include desktop {
+      top: 50%;
+      transform: translateY(-50%);
+      right: fontsz(68);
+    }
+  }
+
+  &__item--icon-twitter {
+    top: 0;
+    right: fontsz(65);
+
+    @include desktop {
+      top: 50%;
+      transform: translateY(-50%);
+      right: fontsz(38);
+    }
+  }
+
+  &__item--01 {
+    font-size: fontsz(13);
+    font-family: $acrommd;
+    transform: rotate(270deg);
+    left: fontsz(62);
+    bottom: fontsz(34);
+
+    @include desktop {
+      font-size: fontsz(15);
+      font-family: $futurabold;
+      left: fontsz(38);
+      bottom: fontsz(42);
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      background-color: $text-header-color;
+      width: fontsz(13);
+      height: fontsz(1);
+      bottom: fontsz(-4);
+      right: fontsz(-24);
+
+      @include desktop {
+        width: fontsz(14);
+        height: fontsz(1.25);
+        bottom: fontsz(-6);
+      }
+    }
+  }
+
+  &__item--02 {
+    display: none;
+    font-size: fontsz(9);
+    font-family: $futuramd;
+
+    @include desktop {
+      display: block;
+      left: fontsz(57);
+      top: fontsz(36);
+    }
+  }
 }
