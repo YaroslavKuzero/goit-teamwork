@@ -59,16 +59,17 @@
     z-index: 4;
 
     @include tablet {
-      right: fontsz(65);
-      width: 300px;
-      background-color: transparent;
-      text-align: right;
-      text-shadow: #181c27 1px 1px 3px;
-      padding-top: fontsz(30);
+      width: 200px;
+      right: 0;
+      border-radius: 10%;
     }
 
     @include desktop {
+      padding-top: fontsz(30);
       right: fontsz(38);
+      text-align: right;
+      background-color: transparent;
+      text-shadow: #181c27 1px 1px 3px;
     }
   }
 

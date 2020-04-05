@@ -38,37 +38,10 @@
         }
     }
     &__text {
-        font-family: $acromreg;
-        line-height: 1.39rem;
-        position: relative;
-        @media screen and (min-width: 768px) {
-            font-size: 0.64rem;
-            padding-left: 3.36rem;
-            line-height: 1rem;
-            margin: 0;
-        }
-        @media screen and (min-width: 1200px) {
-            font-size: 0.71rem;
-            line-height: 1.07rem;
-        }
+        @extend %header-description;
         &--text-bg {
             background-color: $main-text-bg-color;
             color: $text-header-color;
-        &::before {
-            position: absolute;
-            top: 0.45rem;
-            left: -2.79rem;
-            display: block;
-            content: '';
-            width: 1.43rem;
-            height: 0.29rem;
-            background-color: $main-heading-color;
-            @media screen and (min-width: 768px) {
-                left: 0rem;
-                width: 29px;
-                height: 5px;
-            }
-        }
         }
     }
 }
