@@ -29,7 +29,9 @@
   color: $text-header-color;
   border: none;
   box-shadow: 0px 5px 6px 0px $shadow-btn-color;
+  outline: none;
   cursor: pointer;
+  transition: all 200ms linear;
 
   @include tablet {
     box-shadow: 0 7px 10px rgba(196, 87, 15, 0.26);
@@ -37,7 +39,32 @@
 
   @include desktop {
     box-shadow: 0 9px 13px rgba(196, 87, 15, 0.26);
+  }
 
+  &:hover {
+    background-color: rgb(23, 236, 255);
+    box-shadow: 0px 5px 6px 0px rgba(23, 236, 255, 0.26);
+
+    @include tablet {
+      box-shadow: 0px 7px 10px 0px rgba(23, 236, 255, 0.26);
+    }
+
+    @include desktop {
+      box-shadow: 0px 9px 13px 0px rgba(23, 236, 255, 0.26);
+    }
+
+    &:active {
+      background-color: rgb(6, 164, 178);
+      box-shadow: 0px 5px 6px 0px rgba(6, 164, 178, 0.26);
+
+      @include tablet {
+        box-shadow: 0px 7px 10px 0px rgba(6, 164, 178, 0.26);
+      }
+
+      @include desktop {
+        box-shadow: 0px 9px 13px 0px rgba(6, 164, 178, 0.26);
+      }
+    }
   }
 }
 
@@ -46,14 +73,14 @@
         line-height: 1.39rem;
         position: relative;
   
-        @media screen and (min-width: 768px) {
+        @include tablet {
             font-size: 0.64rem;
             padding-left: 3.36rem;
             line-height: 1rem;
             margin: 0;
         }
   
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             font-size: 0.71rem;
             line-height: 1.07rem;
         }
@@ -68,7 +95,7 @@
             height: 0.29rem;
             background-color: $main-heading-color;
           
-            @media screen and (min-width: 768px) {
+            @include tablet {
                 left: 0rem;
                 width: 29px;
                 height: 5px;
