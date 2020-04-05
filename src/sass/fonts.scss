@@ -1,86 +1,90 @@
 @font-face {
-  font-family: 'Futura Medium';
-  src: url('../fonts/Futura/FuturaMediumC.eot');
-  src: local('Futura-Medium'), local('Futura Medium'),
-  url('FuturaMediumC.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Futura/FuturaMediumC.woff') format('woff');
+  font-family: "Futura Medium";
+  src: url("../fonts/Futura/FuturaMediumC.eot");
+  src: local("Futura-Medium"), local("Futura Medium"),
+    url("FuturaMediumC.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Futura/FuturaMediumC.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Futura Demi';
-  src: url('../fonts/Futura/FuturaDemiC.eot');
-  src: local('Futura-Demi'), local('Futura Demi'), 
-  url('FuturaDemiC.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Futura/FuturaDemiC.woff') format('woff');
+  font-family: "Futura Demi";
+  src: url("../fonts/Futura/FuturaDemiC.eot");
+  src: local("Futura-Demi"), local("Futura Demi"),
+    url("FuturaDemiC.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Futura/FuturaDemiC.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Acrom Light';
-  src: url('../fonts/Acrom/Acrom-Light.eot');
-  src: local('Acrom-Light'), local('Acrom Light'),
-  url('Acrom-Light.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Acrom/Acrom-Light.woff') format('woff');
+  font-family: "Acrom Light";
+  src: url("../fonts/Acrom/Acrom-Light.eot");
+  src: local("Acrom-Light"), local("Acrom Light"),
+    url("Acrom-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Acrom/Acrom-Light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Acrom Regular';
-  src: url('../fonts/Acrom/Acrom-Regular.eot');
-  src: local('Acrom-Regular'), local('Acrom Regular'), 
-  url('Acrom-Regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Acrom/Acrom-Regular.woff') format('woff');
+  font-family: "Acrom Regular";
+  src: url("../fonts/Acrom/Acrom-Regular.eot");
+  src: local("Acrom-Regular"), local("Acrom Regular"),
+    url("Acrom-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Acrom/Acrom-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Acrom Medium';
-  src: url('../fonts/Acrom/Acrom-Medium.eot');
-  src: local('Acrom-Medium'), local('Acrom Medium'),url('Acrom-Medium.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Acrom/Acrom-Medium.woff') format('woff');
+  font-family: "Acrom Medium";
+  src: url("../fonts/Acrom/Acrom-Medium.eot");
+  src: local("Acrom-Medium"), local("Acrom Medium"),
+    url("Acrom-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Acrom/Acrom-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Acrom Bold';
-  src: url('../fonts/Acrom/Acrom-Bold.eot');
-  src: local('Acrom-Bold'), local('Acrom Bold'),
-  url('Acrom-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Acrom/Acrom-Bold.woff') format('woff');
+  font-family: "Acrom Bold";
+  src: url("../fonts/Acrom/Acrom-Bold.eot");
+  src: local("Acrom-Bold"), local("Acrom Bold"),
+    url("Acrom-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Acrom/Acrom-Bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
+
   font-family: 'Acrom Extra Bold';
   src: url('../fonts/Acrom/Acrom-ExtraBold.eot');
   src: local('Acrom-Extra-Bold'), local('Acrom Extra Bold'), 
   url('Acrom-ExtraBold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Acrom/Acrom-Bold.woff') format('woff');
+  url('../fonts/Acrom/Acrom-ExtraBold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy Light';
-  src: url('../fonts/Gilroy/Gilroy-Light.eot');
-  src: local('Gilroy-Light'), local('Gilroy Light'),url('Gilroy-Light.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Gilroy/Gilroy-Light.woff') format('woff');
+  font-family: "Gilroy Light";
+  src: url("../fonts/Gilroy/Gilroy-Light.eot");
+  src: local("Gilroy-Light"), local("Gilroy Light"),
+    url("Gilroy-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy/Gilroy-Light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Minion Pro Regular';
-  src: url('../fonts/MinionPro/MinionPro-Regular.eot');
-  src: local('Minion-Pro-Regular'), local('Minion Pro Regular'),url('MinionPro-Regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/MinionPro/MinionPro-Regular.woff') format('woff');
+  font-family: "Minion Pro Regular";
+  src: url("../fonts/MinionPro/MinionPro-Regular.eot");
+  src: local("Minion-Pro-Regular"), local("Minion Pro Regular"),
+    url("MinionPro-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MinionPro/MinionPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

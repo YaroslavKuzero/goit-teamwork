@@ -1,52 +1,9 @@
 .promo {
   background-color: #181c27;
-  // width: 100%;
-  min-height: 612px;
-  // background-position: center;
-  // background-size: cover;
-
-  &__wrapper {
-    min-height: 612px;
-    background-image: url(./images/blot.png);
-    margin: 0 auto;
-    width: 446px;
-    padding: 60px 50px 40px;
-    position: relative;
-    background-position: center;
-  }
-
-  &__first-section {
-    padding-bottom: 75px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &__second-section {
-    padding-top: 75px;
-  }
-
-  &__title {
-    margin: 0 0 34px;
-    font-size: 30px;
-    line-height: 39px;
-    color: $text-header-color;
-  }
-
-  &__subtitle {
-    margin: 0;
-    font-size: 12px;
-    letter-spacing: 0px;
-    line-height: 20px;
-    color: $text-header-color;
-    text-transform: uppercase;
-  }
-
-  &__dscr {
-    margin: 0;
-    font-size: 12px;
-    line-height: 20px;
-    color: $secondary-text-header-color;
-  }
+  background-image: url(../images/mobile/blot-m.png);
+  position: relative;
+  background-position: center;
+  background-size: cover;
 
   &__banner {
     margin: 0;
@@ -54,11 +11,274 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 120px;
-    line-height: 70px;
+    font-size: fontsz(120);
+    line-height: fontsz(70);
     color: rgba(0, 0, 0, 0.2);
-    font-weight: 800;
+    font-family: $acromexbold;
     text-align: center;
     text-transform: uppercase;
+    z-index: 1;
+
+    @include tablet {
+      font-size: fontsz(236);
+      line-height: fontsz(101);
+    }
+
+    @include desktop {
+      font-size: fontsz(263);
+      line-height: fontsz(113);
+    }
   }
+
+  &__pos {
+    position: relative;
+    min-height: fontsz(612);
+
+    @include tablet {
+      min-height: fontsz(475);
+    }
+
+    @include desktop {
+      min-height: fontsz(531);
+    }
+  }
+
+  &__borders {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__borders-left,
+  &__borders-right {
+    width: 34%;
+    min-height: fontsz(612);
+    border-left: 1px dashed rgba(255, 255, 255, 0.05);
+    border-right: 1px dashed rgba(255, 255, 255, 0.05);
+    z-index: 2;
+  }
+
+  &__content {
+    position: relative;
+    margin: 0 auto;
+    padding: fontsz(60) fontsz(50) fontsz(36);
+    z-index: 10;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: fontsz(84) 0 fontsz(28);
+    }
+
+    @include desktop {
+      padding: fontsz(96) 0 fontsz(30);
+    }
+  }
+
+  &__first-section {
+    padding-bottom: fontsz(75);
+    text-align: center;
+    text-transform: uppercase;
+
+    @include tablet {
+      padding: 0;
+    }
+
+    @include desktop {
+      // padding: fontsz(96) 0 fontsz(30);
+    }
+  }
+
+  &__second-section {
+    padding-top: fontsz(75);
+
+    @include tablet {
+      padding: 0;
+      // width: fontsz(150);
+    }
+
+    @include desktop {
+      // width: fontsz(165);
+    }
+  }
+
+  &__title {
+    margin: 0 0 fontsz(34);
+    font-size: fontsz(30);
+    line-height: fontsz(39);
+    color: $text-header-color;
+
+    @include tablet {
+      margin: 0 0 fontsz(26);
+      font-size: fontsz(45);
+      line-height: fontsz(56);
+    }
+
+    @include desktop {
+      margin: 0 0 fontsz(28);
+      font-size: fontsz(50);
+      line-height: fontsz(63);
+    }
+  }
+
+  &__subtitle-arrows {
+    position: relative;
+    margin: 0;
+    font-size: fontsz(12);
+    line-height: fontsz(20);
+    color: $text-header-color;
+
+    @include tablet {
+      font-size: fontsz(8);
+      line-height: fontsz(13);
+    }
+
+    @include desktop {
+      font-size: fontsz(9);
+      line-height: fontsz(15);
+    }
+
+    &::before,
+    &::after {
+      display: block;
+      position: absolute;
+      font-family: $acromexbold;
+      font-size: fontsz(21);
+      line-height: fontsz(12);
+      color: $arrows-color;
+
+      @include tablet {
+        font-size: fontsz(13);
+        line-height: fontsz(17);
+      }
+
+      @include tablet {
+        font-size: fontsz(15);
+        line-height: fontsz(19);
+      }
+    }
+
+    &::before {
+      content: "<";
+      left: fontsz(-18);
+      top: fontsz(4);
+    }
+
+    &::after {
+      content: "/>";
+      bottom: fontsz(4);
+      right: fontsz(-28);
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 8px;
+    font-family: $acromexbold;
+    font-size: fontsz(12);
+    line-height: fontsz(20);
+    color: $text-header-color;
+    text-transform: uppercase;
+
+    @include tablet {
+      width: fontsz(150);
+      font-size: fontsz(11);
+      line-height: fontsz(17);
+    }
+
+    @include desktop {
+      width: fontsz(165);
+      font-size: fontsz(11);
+      line-height: fontsz(19);
+    }
+  }
+
+  &__dscr {
+    margin: 0;
+    font-size: fontsz(12);
+    line-height: fontsz(20);
+    font-family: $acromreg;
+    color: $secondary-text-header-color;
+
+    @include tablet {
+      width: fontsz(150);
+      font-size: fontsz(10);
+      line-height: fontsz(13);
+    }
+
+    @include desktop {
+      width: fontsz(160);
+      font-size: fontsz(10);
+      line-height: fontsz(15);
+    }
+  }
+
+  &__banner-img {
+    display: none;
+    position: absolute;
+
+    @include tablet {
+      display: block;
+      right: 0;
+      bottom: 0;
+      z-index: 3;
+    }
+  }
+}
+
+.promo-overlay {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  @include tablet {
+    min-height: fontsz(164);
+    padding: 0 fontsz(65);
+  }
+
+  @include desktop {
+    min-height: fontsz(80);
+    padding: 0 fontsz(38);
+  }
+
+  &__item {
+    display: none;
+    position: absolute;
+    line-height: 0;
+
+    @include tablet {
+      display: block;
+    }
+
+    &--img {
+      right: 0;
+      bottom: 0;
+      z-index: 3;
+    }
+  }
+
+  &__icon {
+    width: fontsz(16);
+    height: fontsz(16);
+    padding: 0;
+    fill: $text-header-color;
+  }
+}
+
+.promo__section-btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 218px;
+  height: 54px;
+  filter: drop-shadow(0px 5px 3px rgba(196, 87, 15, 0.26));
+  background-color: #ff6b08;
+  z-index: 10;
 }
