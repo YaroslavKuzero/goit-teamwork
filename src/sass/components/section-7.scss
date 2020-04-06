@@ -1,0 +1,130 @@
+.heading {
+    @include tablet {
+        display: flex;
+    }
+}
+.section-heading {
+    width: fontsz(318);
+    margin: 0 auto;
+    padding-left: 0;
+    margin: 0 auto;
+    @include tablet {
+        width: fontsz(200);
+    }
+    &__header {
+        @extend %header;
+        width: fontsz(175);
+        @include tablet {
+            width: fontsz(190);
+        }
+    }
+    &__description {
+        @extend %header-description;
+        // width: fontsz(340);
+    }
+    &__image {
+        @include tablet {
+            align-self: flex-start;
+        }
+    }
+}
+.section-description {
+    line-height: fontsz(20);
+    font-size: fontsz(14);
+    margin-bottom: fontsz(35);
+    @include tablet {
+        display: flex;
+        line-height: fontsz(15);
+        font-size: fontsz(9);
+        margin-bottom: fontsz(80);
+    }
+    &__image-desk {
+        align-self: flex-end;
+    }
+    &-paragraphs {
+        @include tablet {
+            width: fontsz(307);
+        }  
+    }
+    &__header {
+        font-family: $acromexbold;
+        text-transform: uppercase;
+        color: $secondary-heading-color;
+        width: fontsz(224);
+        margin-right: fontsz(35);
+        @include tablet {
+            width: fontsz(196);
+        }
+        @include desktop {
+            line-height: fontsz(16);
+            font-size: fontsz(10);
+        }
+        &--text {
+            @include tablet {
+                width: fontsz(145);
+                margin: 0;
+            }
+            @include desktop {
+                width: fontsz(159);
+            }
+        }
+        &--bgc{
+            background-color: $main-text-bg-color;
+            display: inline-block;
+        }
+    }
+    &__text {
+        width: fontsz(380);
+        @include tablet {
+            width: fontsz(170);
+        }
+        &--bold {
+            font-family: $acrombold;
+            margin-bottom: fontsz(16);
+            @include tablet {
+                width: fontsz(170);
+                margin: 0;
+                margin-bottom: fontsz(13);
+            }
+        }
+        &--regular {
+            font-family: $acromreg;
+            @include tablet {
+                line-height: fontsz(11);
+                font-size: fontsz(8);
+                margin: 0;
+            }
+            @include desktop {
+                line-height: fontsz(13);
+                font-size: fontsz(9);
+            }
+        }
+    }
+    &__image-mobile {
+        @include tablet {
+            display: none;
+        }
+    }
+    &__image-desk {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+    }
+    &__list {
+        padding-left: fontsz(40);
+        @include tablet {
+            display: flex;
+            margin-bottom: fontsz(35);
+        }
+        &--bottom{
+            margin-bottom: 0;
+        }
+        &--order-2{
+            order: 2;
+        }
+        &--order-3{
+            order: 3;
+        }
+    }
+}
