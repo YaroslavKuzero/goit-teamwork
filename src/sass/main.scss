@@ -4,18 +4,18 @@
 
 @import "./normalize.scss";
 @import "./fonts.scss";
+@import "./helpers/functions.scss";
 @import "./helpers/variables.scss";
 @import "./helpers/mixins.scss";
 @import "./helpers/placeholders.scss";
-@import "./helpers/functions.scss";
 @import "./base.scss";
 
 // //Components
 @import "./components/header.scss";
 @import "./components/promo.scss";
-@import './components/slider-section.scss';
-@import './components/slider.scss';
-@import './components/section_13.scss';
+@import "./components/slider-section.scss";
+@import "./components/slider.scss";
+@import "./components/section_13.scss";
 @import "./components/take-bonuses.scss";
 @import "./components/input-form.scss";
 @import "./components/section-important.scss";

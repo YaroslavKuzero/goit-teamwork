@@ -370,6 +370,11 @@
     height: fontsz(16);
     padding: 0;
     fill: $text-header-color;
+    @include transition;
+
+    &:hover {
+      fill: $orange-text-color;
+    }
   }
 
   &__item--icon-facebook {
