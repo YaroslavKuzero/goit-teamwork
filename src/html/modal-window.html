@@ -1,0 +1,62 @@
+<div class="modal">
+  <div class="form">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <h3 class="modal-contact-title">Заполните форму <br> и мы свяжемся с вами</h3>
+    <form class="form-inline contactform-select" action="#" method="GET">
+      <ul class="modal-list list">
+        <li class="modal-item">
+          <fieldset class="contactform-item">
+            <legend class="label" align="left">Имя</legend>
+            <input
+              class="contactform__name form-control"
+              type="text"
+              name="user-name"
+              placeholder="Как вас зовут?"
+              required
+              autocomplete="off"
+            />
+          </fieldset>
+        </li>
+        <li class="modal-item">
+          <fieldset class="contactform-item">
+            <legend class="label" align="left">Телефон</legend>
+            <input
+              class="contactform__phone form-control"
+              type="tel"
+              name="user-telephone"
+              placeholder="Ваш номер телефона"
+              autocomplete="off"
+              required
+            />
+          </fieldset>
+        </li>
+        <li class="modal-item">
+          <fieldset class="contactform-item">
+            <legend class="label" align="left">E-mail</legend>
+            <input
+              class="contactform__mail form-control"
+              type="email"
+              name="user-e-mail"
+              placeholder="Адрес электронного ящика"
+              autocomplete="off"
+              required
+            />
+          </fieldset>
+        </li>
+        <li class="modal-item">
+          <fieldset class="contactform-item">
+            <legend class="label" align="left">Ваше сообщение</legend>
+            <textarea
+              class="message form-control"
+              placeholder="Cообщение"
+              name="user-message"
+            ></textarea>
+          </fieldset>
+        </li>
+      </ul>
+      <button class="submit-btn" type="submit"> Получить консультацию</button>
+    </form>
+  </div>
+</div>
