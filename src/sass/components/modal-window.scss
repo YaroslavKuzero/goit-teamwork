@@ -1,0 +1,136 @@
+.modal {
+    display: none;
+    background-color: $header-pseudo-text-color;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    .close {
+        @extend %button-orange;
+    }
+
+    .modal-contact-title {
+        @extend %header;
+        margin: 0;
+        text-align: center;
+        color: $secondary-heading-color;
+    }
+
+    .form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $offer-bg-color;
+
+
+        .form-inline {
+            padding: fontsz(66);
+            background-color: $offer-bg-color;
+            
+
+            .modal-list {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+
+                .modal-item {
+                    margin-bottom: fontsz(21);
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .contactform-item {
+                    padding: 0;
+                    border: none;
+
+                    .label {
+                        font-family: $acromreg;
+                        font-size: fontsz(8);
+                        line-height: fontsz(11.95);
+                        color: $placeholder-text-color;
+
+                        @include tablet{
+                            font-size: fontsz(7);
+                            line-height: fontsz(10.09);
+                          }
+                  
+                          @include desktop{
+                              font-size: fontsz(6);
+                              line-height: fontsz(11.95);
+                            }
+                    }
+
+                    .form-control {
+                        width: 100%;
+                        padding: 0;
+                        margin: 0;
+                        color: $main-heading-color;
+                        border: none;
+
+                        &::placeholder {
+                            font-family: $acrommd;
+                            font-size: fontsz(9);
+                            line-height: fontsz(35.95);
+                            color: $main-heading-color;
+
+                            @include tablet{
+                                font-size: fontsz(8);
+                                line-height: fontsz(28.59);
+                            }
+
+                            @include desktop{
+                                  font-size: fontsz(9);
+                                  line-height: fontsz(31.25);
+                            }
+                        }
+
+                        &:focus {
+                            outline-color: $placeholder-text-color;
+                        }
+
+                        &:valid:not(:placeholder-shown) {
+                            border-color: $secondary-mark-color;
+                        }
+
+                        &:invalid:not(:placeholder-shown) {
+                            border-color: $third-mark-color;
+                        }
+                    }
+                }
+            }
+
+            .submit-btn {
+                @extend %button-orange;
+                margin: 0 auto;
+                width: 100%;
+                height: fontsz(34);
+                font-size: fontsz(8);
+                margin-top: fontsz(33);
+                
+                @include tablet{
+                    width: fontsz(147);
+                    height: fontsz(29);
+                    font-size: fontsz(7);
+                  }
+            
+                  @include desktop{
+                    width: fontsz(163);
+                    height: fontsz(32);
+                    font-size: fontsz(8);
+                  }
+            }
+        }
+    }
+}
+
+.message {
+    resize: none;
+    width: 100%;
+    border: none;
+}
