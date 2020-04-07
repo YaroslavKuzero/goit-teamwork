@@ -1,5 +1,5 @@
 .start-erning {
-  padding: fontsz(57) 0 fontsz(40);
+  padding: fontsz(57) 0 fontsz(35);
 
   @include tablet {
     padding: fontsz(112) 0 fontsz(28);
@@ -115,7 +115,7 @@
     margin: 0;
     font-size: fontsz(21);
     line-height: fontsz(26);
-    font-family: $acrombold;
+    font-family: $acromexbold;
     text-transform: uppercase;
 
     @include tablet {
@@ -193,7 +193,7 @@
 
     @media screen and (max-width: 767px) {
       &:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: fontsz(20);
       }
     }
 
@@ -203,7 +203,7 @@
 
     @media screen and (max-width: 1199px) {
       &:not(:nth-last-child(-n + 4)) {
-        margin-bottom: 20px;
+        margin-bottom: fontsz(20);
       }
     }
 
@@ -212,12 +212,12 @@
 
       &--1 {
         order: 1;
-        margin-bottom: 20px;
+        margin-bottom: fontsz(20);
       }
 
       &--2 {
         order: 2;
-        margin-bottom: 20px;
+        margin-bottom: fontsz(20);
       }
 
       &--3 {
@@ -226,12 +226,12 @@
 
       &--4 {
         order: 4;
-        margin-bottom: 20px;
+        margin-bottom: fontsz(20);
       }
 
       &--5 {
         order: 5;
-        margin-bottom: 20px;
+        margin-bottom: fontsz(20);
       }
 
       &--6 {
@@ -240,7 +240,7 @@
 
       &--7 {
         order: 7;
-        margin-bottom: 20px;
+        margin-bottom: fontsz(20);
       }
 
       &--8 {

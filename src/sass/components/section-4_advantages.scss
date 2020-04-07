@@ -1,0 +1,11 @@
+.advantages {
+  padding: fontsz(30) 0 fontsz(22);
+
+  @include tablet {
+    padding: fontsz(45) 0;
+  }
+
+  @include desktop {
+    padding: fontsz(60) 0;
+  }
+}

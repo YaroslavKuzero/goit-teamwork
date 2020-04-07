@@ -1,0 +1,233 @@
+.dry-facts {
+  padding: fontsz(35) 0 fontsz(20);
+
+  @include tablet {
+    padding: fontsz(28) 0 fontsz(45);
+  }
+
+  @include desktop {
+    padding: fontsz(60) 0 fontsz(60);
+  }
+
+  &__pos {
+    position: relative;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      padding-right: fontsz(114);
+    }
+
+    @include desktop {
+      padding-right: fontsz(120);
+    }
+  }
+
+  &__title-section {
+    padding: 0 fontsz(77) fontsz(40);
+
+    @include tablet {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    margin: 0 0 fontsz(38);
+    font-size: fontsz(18);
+    line-height: fontsz(24);
+    font-family: $acromexbold;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include tablet {
+      margin-bottom: fontsz(24);
+      width: fontsz(220);
+      font-size: fontsz(27);
+      line-height: fontsz(34);
+      text-align: start;
+    }
+
+    @include desktop {
+      margin-bottom: fontsz(22);
+      width: fontsz(245);
+      font-size: fontsz(30);
+      line-height: fontsz(38);
+    }
+  }
+
+  &__pre-title {
+    position: relative;
+    margin: 0;
+    padding-left: fontsz(40);
+    line-height: fontsz(20);
+    font-family: $acrommd;
+
+    @include tablet {
+      width: fontsz(160);
+      padding-left: fontsz(48);
+      font-size: fontsz(9);
+      line-height: fontsz(13);
+    }
+
+    @include desktop {
+      width: fontsz(175);
+      padding-left: fontsz(53);
+      font-size: fontsz(10);
+      line-height: fontsz(15);
+    }
+
+    &::after {
+      position: absolute;
+      left: 0;
+      top: fontsz(9);
+      display: block;
+      content: "";
+      width: fontsz(20);
+      height: fontsz(2);
+      background-color: $main-text-bg-color;
+
+      @include tablet {
+        width: fontsz(28);
+        height: fontsz(3);
+        top: fontsz(4);
+      }
+
+      @include tablet {
+        width: fontsz(31);
+        top: fontsz(4);
+      }
+    }
+  }
+
+  &__facts-section {
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: fontsz(8);
+      left: fontsz(17);
+      width: fontsz(9);
+      height: fontsz(10);
+      background-color: $third-text-bg-color;
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: fontsz(32);
+      }
+      padding-left: fontsz(42);
+    }
+
+    @include tablet {
+      width: fontsz(153);
+
+      &--order-1 {
+        order: 1;
+      }
+
+      &--order-2 {
+        order: 2;
+      }
+    }
+
+    @include desktop {
+      width: fontsz(165);
+    }
+  }
+
+  &__fact-title {
+    margin: 0 0 fontsz(10);
+    font-size: fontsz(23);
+    line-height: fontsz(29);
+    font-family: $acromexbold;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: fontsz(17);
+      line-height: fontsz(20);
+    }
+    @include desktop {
+      font-size: fontsz(19);
+      line-height: fontsz(23);
+    }
+  }
+
+  &__fact-title-mod {
+    font-size: fontsz(13);
+
+    @include tablet {
+      font-size: fontsz(9);
+    }
+    @include desktop {
+      font-size: fontsz(10);
+    }
+  }
+
+  &__sub-fact-title {
+    margin: 0 0 fontsz(10);
+    line-height: fontsz(20);
+    font-family: $acrommd;
+
+    @include tablet {
+      font-size: fontsz(8);
+      line-height: fontsz(13);
+    }
+
+    @include desktop {
+      font-size: fontsz(9);
+      line-height: fontsz(15);
+    }
+  }
+
+  &__sub-fact-title-mod {
+    background-color: $secondary-text-bg-color;
+  }
+
+  &__fact-dscr {
+    margin: 0;
+    line-height: fontsz(20);
+    color: $main-text-color;
+    font-family: $acromreg;
+
+    @include tablet {
+      margin-bottom: fontsz(18);
+      font-size: fontsz(8);
+      line-height: fontsz(12);
+    }
+
+    @include desktop {
+      font-size: fontsz(9);
+      line-height: fontsz(13);
+    }
+  }
+
+  &__graph-img {
+    display: none;
+
+    @include tablet {
+      display: block;
+      position: absolute;
+      right: fontsz(-44);
+      bottom: 0;
+      z-index: -1;
+    }
+
+    @include desktop {
+      right: fontsz(-49);
+    }
+  }
+}
