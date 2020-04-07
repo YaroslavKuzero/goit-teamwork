@@ -1,0 +1,351 @@
+.start-erning {
+  padding: fontsz(57) 0 fontsz(40);
+
+  @include tablet {
+    padding: fontsz(112) 0 fontsz(28);
+  }
+
+  @include desktop {
+    padding: fontsz(126) 0 fontsz(60);
+  }
+
+  &__question {
+    padding: fontsz(98) 0 fontsz(46);
+    position: relative;
+
+    @include tablet {
+      display: flex;
+      padding: 0 0 fontsz(66);
+    }
+
+    @include desktop {
+      padding-bottom: fontsz(74);
+    }
+  }
+
+  &__pos {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__text-block {
+    padding: 0 fontsz(75);
+
+    @include tablet {
+      padding: 0;
+      margin-left: fontsz(72);
+    }
+
+    @include desktop {
+      margin-left: fontsz(80);
+    }
+  }
+
+  &__dscr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    line-height: fontsz(20);
+    font-family: $acrommd;
+
+    @include tablet {
+      margin-bottom: fontsz(30);
+      position: static;
+      width: fontsz(202);
+      font-size: fontsz(9);
+      line-height: fontsz(13);
+    }
+
+    @include desktop {
+      margin-bottom: fontsz(32);
+      width: fontsz(226);
+      font-size: fontsz(10);
+      line-height: fontsz(15);
+    }
+  }
+
+  &__pre-title {
+    margin: fontsz(45) 0 fontsz(16);
+    position: relative;
+    padding-left: fontsz(42);
+    font-size: fontsz(15);
+    line-height: fontsz(16);
+    font-family: $acromexbold;
+    text-transform: uppercase;
+
+    @include tablet {
+      margin: 0;
+      margin-bottom: fontsz(12);
+      font-size: fontsz(10);
+      line-height: fontsz(17);
+      width: fontsz(154);
+    }
+
+    @include desktop {
+      margin-bottom: fontsz(14);
+      font-size: fontsz(11);
+      line-height: fontsz(19);
+      width: fontsz(176);
+    }
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: fontsz(24);
+      height: fontsz(3);
+      background-color: $main-heading-color;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include tablet {
+        width: fontsz(28);
+        top: fontsz(6);
+      }
+
+      @include desktop {
+        width: fontsz(31);
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: fontsz(21);
+    line-height: fontsz(26);
+    font-family: $acrombold;
+    text-transform: uppercase;
+
+    @include tablet {
+      width: fontsz(224);
+      font-size: fontsz(27);
+      line-height: fontsz(34);
+    }
+
+    @include desktop {
+      width: fontsz(248);
+      font-size: fontsz(30);
+      line-height: fontsz(38);
+    }
+  }
+
+  &__title-mod {
+    color: $text-header-color;
+    background-color: $main-text-bg-color;
+  }
+
+  &__if-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+      position: relative;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__if-you-title {
+    margin: 0;
+    margin-bottom: fontsz(18);
+    align-self: flex-start;
+    line-height: 20px;
+    font-family: $acromexbold;
+    text-transform: uppercase;
+
+    @include tablet {
+      margin-bottom: fontsz(19);
+      font-size: fontsz(17);
+      line-height: fontsz(20);
+    }
+
+    @include desktop {
+      font-size: fontsz(19);
+      line-height: fontsz(23);
+    }
+  }
+
+  &__if-you-list {
+    margin-bottom: fontsz(44);
+
+    @include tablet {
+      margin-bottom: fontsz(16);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @include desktop {
+      margin: 0;
+      width: fontsz(530);
+      max-height: fontsz(270);
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  &__if-you-item {
+    position: relative;
+    padding-left: fontsz(38);
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include tablet {
+      padding: 0;
+    }
+
+    @media screen and (max-width: 1199px) {
+      &:not(:nth-last-child(-n + 4)) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include desktop {
+      align-self: baseline;
+
+      &--1 {
+        order: 1;
+        margin-bottom: 20px;
+      }
+
+      &--2 {
+        order: 2;
+        margin-bottom: 20px;
+      }
+
+      &--3 {
+        order: 3;
+      }
+
+      &--4 {
+        order: 4;
+        margin-bottom: 20px;
+      }
+
+      &--5 {
+        order: 5;
+        margin-bottom: 20px;
+      }
+
+      &--6 {
+        order: 6;
+      }
+
+      &--7 {
+        order: 7;
+        margin-bottom: 20px;
+      }
+
+      &--8 {
+        order: 8;
+      }
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      left: fontsz(19);
+      top: fontsz(8);
+      width: fontsz(8);
+      height: fontsz(8);
+      background-color: $main-text-bg-color;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__if-you-dscr {
+    margin: 0;
+    line-height: fontsz(20);
+    font-family: $acromreg;
+
+    @include tablet {
+      width: fontsz(150);
+      font-size: fontsz(8);
+      line-height: fontsz(13);
+    }
+
+    @include desktop {
+      width: fontsz(165);
+      font-size: fontsz(9);
+      line-height: fontsz(15);
+    }
+  }
+
+  &__if-you-dscr-mod {
+    font-family: $acrombold;
+
+    @include tablet {
+      font-size: fontsz(9);
+    }
+
+    @include desktop {
+      font-size: fontsz(10);
+    }
+  }
+
+  &__if-you-start {
+    margin: 0;
+    width: fontsz(294);
+    line-height: fontsz(20);
+    color: $orange-text-color;
+    font-family: $acrommd;
+    text-align: center;
+
+    @include tablet {
+      align-self: flex-end;
+      width: fontsz(200);
+      font-size: fontsz(10);
+      line-height: fontsz(14);
+      text-align: start;
+    }
+
+    @include desktop {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: fontsz(165);
+      font-size: fontsz(10);
+      line-height: fontsz(15);
+    }
+  }
+
+  &__bg-title {
+    // display: block;
+    margin: 0;
+    position: absolute;
+    top: fontsz(304);
+    left: fontsz(-66);
+    font-size: fontsz(98);
+    line-height: fontsz(78);
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.051);
+    font-family: $acromexbold;
+    transform: rotate(90deg);
+    z-index: -1;
+
+    @include tablet {
+      font-size: fontsz(140);
+      line-height: fontsz(112);
+      top: fontsz(322);
+      left: fontsz(-90);
+    }
+
+    @include desktop {
+      font-size: fontsz(156);
+      line-height: fontsz(125);
+      top: fontsz(360);
+      left: fontsz(-100);
+    }
+  }
+}
