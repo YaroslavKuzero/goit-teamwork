@@ -1,0 +1,264 @@
+
+.four-steps {
+  padding-top: fontsz(18);
+  padding-bottom: fontsz(34);
+
+  @include tablet{
+    padding-top: fontsz(56);
+    padding-bottom: fontsz(54);
+    display: flex;
+  }
+
+  @include desktop {
+    padding-top: fontsz(66);
+    padding-bottom: fontsz(60);
+  }
+
+  .title-block{
+    position: relative;
+    margin-bottom: fontsz(60);
+
+    @include tablet{
+      flex-basis: 50%;
+    }
+    
+    
+    .section__title{
+      text-transform: uppercase;
+      margin-top: 0;
+      font-family: $acromexbold;
+      font-size: 1.29rem;
+      text-align: center;
+      width: fontsz(190);
+      display: block;
+      margin: 0 auto;
+      margin-bottom: fontsz(22);
+    
+      @include tablet {
+        font-size: 1.93rem;
+        line-height: 2.43rem;
+        width: fontsz(202);
+        margin: 0;
+        margin-bottom: fontsz(22);
+      }
+    
+      @include desktop {
+        font-size: 2.14rem;
+        line-height: 2.68rem;
+        width: fontsz(222);
+        margin-bottom: fontsz(26);
+      }
+      
+      &::after {
+        content: "\0020 \005D";
+      }
+
+      .section__title--iversion{
+        background: $main-text-bg-color;
+        color: $secondary-heading-color;
+      }
+    }
+
+    .section__description{
+      @extend %header-description;
+      width: fontsz(258);
+      margin: 0 auto;
+
+      @include tablet {
+        width: fontsz(171);
+        margin: 0;
+      }
+
+      @include desktop {
+        width: fontsz(190);
+      }
+    }
+
+    .bg-title--hor-text{
+        @extend %bg-title;
+        font-size: fontsz(160);
+        transform: rotate(0deg);
+        top: 0;
+        left: 31%;
+
+        @include tablet {
+          font-size: fontsz(275);
+          line-height: fontsz(208);
+          top: 0;
+          left: 30%;
+        }
+
+        @include desktop {
+          font-size: fontsz(333);
+          line-height: fontsz(233);
+        }
+      }
+
+    .bg-title--ver-text{
+        @extend %bg-title;
+        font-size: fontsz(42);
+        top: 50%;
+        left: 36%;
+
+        @include tablet {
+          font-size: fontsz(60);
+          top: 35%;
+          left: 55%;
+        }
+
+        @include desktop {
+          font-size: fontsz(70);
+        }
+      }
+    
+  }
+
+  .steps-block{
+    flex-basis: 50%;
+  }
+
+  .steps__list{
+    margin-bottom: fontsz(42);
+
+    @include tablet{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: fontsz(31);
+    }
+
+    .steps__item--1{
+      @include number-list("01.");
+    }
+
+    .steps__item--2{
+      @include number-list("02.");
+    }
+
+    .steps__item--3{
+      @include number-list("03.");
+    }
+
+    .steps__item--4{
+      @include number-list("04.");
+    }
+
+    .steps__item{
+      position: relative;
+      padding-left: fontsz(64);
+      width: fontsz(340);
+      margin: 0 auto;
+      margin-bottom: fontsz(36);
+      @include bluedots;
+
+      @include tablet{
+      margin: 0;
+      flex-basis: 46.75%;
+      padding-left: fontsz(38);
+      margin-bottom: fontsz(26);
+
+      &:nth-last-child(-n+2){
+        margin-bottom: 0;
+      }
+      }
+
+      @include desktop{
+        margin-bottom: fontsz(30);
+
+        &:nth-last-child(-n+2){
+          margin-bottom: 0;
+        }
+        }
+
+
+      .steps__description{
+        margin: 0;
+        padding: 0;
+        font-family: $acromexbold;
+        color: $main-heading-color;
+        line-height: fontsz(21.27);
+        text-transform: uppercase;
+        margin-bottom: fontsz(19);
+
+        @include tablet{
+          font-size: fontsz(9);
+          line-height: fontsz(14.58);
+          margin-bottom: fontsz(11);
+        }
+
+        @include desktop{
+          font-size: fontsz(10);
+          line-height: fontsz(16.25);
+          margin-bottom: fontsz(12);
+        }
+      }
+
+      .steps__description--detailed{
+        margin: 0;
+        padding: 0;
+        font-family: $acromreg;
+        color: $main-text-color;
+        line-height: fontsz(19.5);
+
+        @include tablet{
+          font-size: fontsz(8);
+          line-height: fontsz(11.78);
+        }
+
+        @include desktop{
+          font-size: fontsz(9);
+          line-height: fontsz(13.13);
+        }
+      }
+    }
+  }
+
+  .text-conclusion {
+    margin: 0;
+    padding: 0;
+    width: fontsz(328);
+    margin: 0 auto;
+    font-family: $acrommd;
+    color: $orange-text-color;
+    line-height: fontsz(21.55);
+    text-shadow: $main-text-bg-color 0 0 1px;
+    margin-bottom: fontsz(31);
+    position: relative;
+
+    @include tablet{
+      font-size: fontsz(9);
+      line-height: fontsz(13.46);
+      margin-bottom: fontsz(21);
+      padding-left: fontsz(31);
+    }
+
+    @include desktop{
+      font-size: fontsz(10);
+      line-height: fontsz(15);
+      margin-bottom: fontsz(22);
+    }
+
+    &::before{
+      content: "";
+      display: block;
+      @include bg-img ("../images/icon/slash.svg");
+      width: fontsz(17);
+      height: fontsz(28);
+      position: absolute;
+      top: fontsz(4);
+      left: fontsz(-39);
+
+      @include tablet{
+        width: fontsz(11);
+        height: fontsz(18);
+        top: fontsz(0);
+        left: fontsz(0);
+      }
+
+      @include desktop{
+        width: fontsz(12);
+        height: fontsz(20);
+      }
+    }
+  }
+}

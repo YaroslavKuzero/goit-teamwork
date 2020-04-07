@@ -70,7 +70,7 @@
 }
 
 %header-description {
-    font-family: $acromreg;
+    font-family: $acrommd;
         line-height: 1.39rem;
         position: relative;
   
@@ -102,4 +102,28 @@
                 height: 5px;
             }
         }
+}
+
+%bg-title{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  transform: rotate(90deg);
+  top: fontsz(17);
+  left: 0;
+  font-family: $acromexbold;
+  font-size: fontsz(101.73);
+  color: $white-pseudo-text-color;
+  text-transform: uppercase;
+  z-index: -1;
+
+  @include tablet{
+    top: fontsz(47);
+    left: fontsz(184);
+  }
+
+  @include desktop{
+    top: fontsz(50);
+    left: fontsz(224);
+  }
 }
