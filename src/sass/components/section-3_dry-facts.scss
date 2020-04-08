@@ -15,7 +15,7 @@
     @include tablet {
       display: flex;
       justify-content: space-between;
-      padding-right: fontsz(114);
+      padding-right: fontsz(100);
     }
 
     @include desktop {
@@ -105,6 +105,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__item {
