@@ -2,20 +2,34 @@
 <footer class="contacts">
   <div class="contacts__container container">
     <div class="media-wrapper">
-      <a href="#" class="contacts__logo link">
-        <picture class="logo">
+      <a href="https://goit.ua/" target="blank" class="contacts__logo link">
+          <picture>
             <source
-                media="(min-width: 768px)"
-                srcset="./images/desktop/Layer_317.png 56w,
-                ./images/desktop/Layer_317@2x-min.png 128w"
-                sizes="57px"
-                height="18">
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/desktop/logo-d.png    1x,
+                ./images/desktop/logo-d@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/tablet/logo-t.png    1x,
+                ./images/tablet/logo-t@2x.png 2x
+              "
+            />
             <img
-                src="./images/mobile/Layer_317.png" alt="GoIt-logo"
-                srcset="./images/mobile/Layer_317.png 1x,
-                ./images/desktop/Layer_317@2x-min.png 2x"
-                >
-        </picture>
+              class="logo"
+              srcset="
+                ./images/mobile/logo-m.png     66w,
+                ./images/mobile/logo-m@2x.png 132w
+              "
+              sizes="66px"
+              src="./images/mobile/logo-m.png"
+              alt="GoIt-logo"
+              height="23"
+            />
+          </picture>
       </a>
       <address class="contacts__block">
         <ul class="contacts__details list">
@@ -36,7 +50,7 @@
         <li class="social__item"><a class="social__link link" target="blank" href="https://www.youtube.com/channel/UCN7NQEBOUuIoXrJZzqVb58Q/videos">[ Youtube ]</a></li>
       </ul>
     </div>
-    <button class="button__footer button--catalyst">заказать звонок</button>
+    <button class="button__footer button--catalyst animated infinite pulse delay-1s">заказать звонок</button>
   </div>
 </footer>
 <!-- Yaroslav Kuzero section footer END -->

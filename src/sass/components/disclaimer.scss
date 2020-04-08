@@ -54,4 +54,20 @@
       font-size: fontsz(7.5);
     }
   }
+
+
+
+    .rezart-icon {
+      display: block;
+      width: fontsz(14);
+      fill: $text-footer-color;
+    
+      @include tablet {
+        width: fontsz(18);
+      }
+    
+      @include desktop {
+        width: fontsz(19);
+      }
+    }
 }

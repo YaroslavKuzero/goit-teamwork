@@ -92,14 +92,14 @@
             left: -2.79rem;
             display: block;
             content: '';
-            width: 1.43rem;
-            height: 0.29rem;
+            width: fontsz(20);
+            height: fontsz(4);
             background-color: $main-heading-color;
           
             @include tablet {
                 left: 0rem;
-                width: 29px;
-                height: 5px;
+                width: fontsz(29);
+                height: fontsz(3);
             }
         }
 }

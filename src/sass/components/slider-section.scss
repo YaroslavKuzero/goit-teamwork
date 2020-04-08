@@ -1,11 +1,18 @@
 .section-5 {
-    @media screen and (min-width: 768px) {
+  padding-top: fontsz(14);
+
+    @include tablet {
         display: flex;
         justify-content: center;
+        padding-top: fontsz(56);
         &__header {
             width: 14rem;
         }
 
+    }
+
+    @include desktop{
+      padding-top: fontsz(60);
     }
 }
 .slider-section {
