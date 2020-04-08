@@ -118,3 +118,55 @@
     }
   }
 }
+
+@mixin number-list-orange ($content:""){
+  &::after{
+    content: "\005B" $content "\005D";
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 15px;
+    left: -19px;
+    font-family: $acromexbold;
+    text-shadow: $main-text-bg-color 0 0 0.5px;
+    color: $secondary-heading-color;
+    transform: rotate(270deg);
+    font-size: fontsz(12);
+
+    @include tablet{
+      font-size: fontsz(6);
+      top: 8px;
+      left: -8px;
+    }
+
+    @include desktop{
+      font-size: fontsz(7);
+      left: -9px;
+    }
+  }
+}
+
+
+@mixin orange-line{
+&::before{
+  content: "";
+  display: block;
+  width: fontsz(8);
+  height: fontsz(45);
+  background-color: $third-text-bg-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @include tablet{
+    width: fontsz(6);
+    height: fontsz(20);
+  }
+
+  @include desktop{
+    width: fontsz(7);
+    height: fontsz(24);
+  }
+}
+}
