@@ -127,3 +127,54 @@
     left: fontsz(224);
   }
 }
+%list-bg-header {
+  display: inline-block;
+  margin: 0;
+  font-family: $acrommd;
+  color: $text-header-color;
+  background-color: $main-text-bg-color;
+  font-size: fontsz(12);
+  line-height: fontsz(16);
+  text-decoration: underline;
+  @include tablet {
+    font-size: fontsz(9);
+    line-height: fontsz(11);
+    margin-bottom: fontsz(25);
+  }
+  @include desktop {
+    font-size: fontsz(10);
+    line-height: fontsz(13);
+  }
+  &::before {
+    content: "\005B \0020";
+  }
+  &::after {
+    content: "\0020 \005D";
+  }
+}
+%list-header {
+  font-family: $acromexbold;
+  text-transform: uppercase;
+    @include tablet {
+      font-size: fontsz(9);
+      margin: 0;
+      margin-bottom: fontsz(7);
+    }
+    @include desktop {
+      font-size: fontsz(10);
+      margin-bottom: fontsz(10);
+    }
+}
+%list-paragraph {
+  color: $main-text-color;
+  font-family: $acromreg;
+    @include tablet {
+      font-size: fontsz(8);
+      line-height: fontsz(12);
+      margin: 0;
+    }
+    @include desktop {
+      font-size: fontsz(9);
+      line-height: fontsz(12);
+    }
+}
