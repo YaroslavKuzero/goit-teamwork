@@ -1,0 +1,220 @@
+.expert {
+  padding: fontsz(38) 0 fontsz(33);
+
+  @include tablet {
+    padding: fontsz(50) 0;
+  }
+
+  @include desktop {
+    padding: fontsz(60) 0;
+  }
+
+  &__pos {
+    position: relative;
+    padding-top: 176px;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
+
+  &__photo {
+    margin: 0 auto;
+  }
+
+  &__text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fontsz(264);
+
+    @include tablet {
+      position: static;
+      width: fontsz(240);
+      transform: none;
+    }
+
+    @include desktop {
+      width: fontsz(280);
+    }
+  }
+
+  &__list-title {
+    margin: 0 0 fontsz(16);
+    font-size: fontsz(19);
+    line-height: fontsz(23);
+    text-transform: uppercase;
+
+    @include tablet {
+      margin-bottom: fontsz(12);
+      font-size: fontsz(27);
+      line-height: fontsz(34);
+    }
+
+    @include desktop {
+      font-size: fontsz(30);
+      line-height: fontsz(38);
+    }
+  }
+
+  &__pre-title {
+    position: relative;
+    margin: 0;
+    padding-left: fontsz(27);
+    font-size: fontsz(13.5);
+    line-height: fontsz(20);
+    font-family: $acrommd;
+
+    @include tablet {
+      padding-left: fontsz(46);
+      font-size: fontsz(9);
+      line-height: fontsz(13);
+    }
+
+    @include desktop {
+      padding-left: fontsz(52);
+      font-size: fontsz(10);
+      line-height: fontsz(15);
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: fontsz(8);
+      width: fontsz(14);
+      height: fontsz(3);
+      background-color: $main-text-bg-color;
+
+      @include tablet {
+        top: fontsz(4);
+        width: fontsz(28);
+      }
+
+      @include desktop {
+        width: fontsz(31);
+        height: fontsz(4);
+      }
+    }
+  }
+
+  &__pre-title-bg {
+    background-color: $secondary-text-bg-color;
+  }
+
+  &__list {
+    margin: 0 auto;
+    padding-top: fontsz(40);
+    width: fontsz(294);
+
+    @include tablet {
+      margin: 0;
+      padding-top: fontsz(24);
+      width: fontsz(220);
+    }
+
+    @include desktop {
+      padding-top: fontsz(32);
+      width: fontsz(245);
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: fontsz(21);
+
+    &:not(:last-child) {
+      margin-bottom: fontsz(26);
+    }
+
+    @include tablet {
+      padding-left: fontsz(24);
+
+      &:not(:last-child) {
+        margin-bottom: fontsz(16);
+      }
+    }
+
+    @include desktop {
+      padding-left: fontsz(25);
+
+      &:not(:last-child) {
+        margin-bottom: fontsz(22);
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: fontsz(7);
+      left: 0;
+      display: block;
+      content: "";
+      width: fontsz(5);
+      height: fontsz(5);
+      background-color: $main-text-bg-color;
+
+      @include tablet {
+        top: fontsz(4);
+        width: fontsz(7);
+        height: fontsz(7);
+      }
+
+      @include desktop {
+        width: fontsz(8);
+        height: fontsz(8);
+      }
+    }
+  }
+
+  &__item-title {
+    margin: 0;
+    line-height: fontsz(20);
+    font-family: $acromexbold;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: fontsz(9);
+      line-height: fontsz(15);
+    }
+
+    @include desktop {
+      font-size: fontsz(10);
+      line-height: fontsz(16);
+    }
+  }
+
+  &__item-title-mod {
+    @include tablet {
+      font-size: fontsz(13);
+      line-height: fontsz(15);
+    }
+
+    @include desktop {
+      font-size: fontsz(15);
+      line-height: fontsz(16);
+    }
+  }
+
+  &__item_dscr {
+    margin: 0;
+    margin-top: fontsz(16);
+    line-height: fontsz(20);
+    color: $main-text-color;
+    font-family: $acromreg;
+
+    @include tablet {
+      margin-top: fontsz(4);
+      font-size: fontsz(8);
+      line-height: fontsz(12);
+    }
+
+    @include desktop {
+      font-size: fontsz(9);
+      line-height: fontsz(13);
+    }
+  }
+}
