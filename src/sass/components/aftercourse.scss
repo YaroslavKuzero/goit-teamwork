@@ -1,0 +1,291 @@
+.aftercourse{
+    padding-top: fontsz(19);
+    padding-bottom: fontsz(48);
+
+    @include tablet{
+      padding-top: fontsz(56);
+      padding-bottom: fontsz(56);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include desktop{
+        padding-top: fontsz(62);
+        padding-bottom: fontsz(64);
+      }
+    
+    &__text{
+
+      @include tablet{
+        position: relative;
+      }
+    }
+
+    &__title{
+        @extend %header;
+        text-align: center;
+
+        @include tablet{
+          text-align: left;
+        }
+    }
+
+    .advantages{
+        padding: 0;
+        margin: 0;
+        margin-bottom: fontsz(50);
+
+        @include tablet{
+          margin-bottom: fontsz(0);
+          display: flex;
+          flex-wrap: wrap;
+          }
+
+        &__item{
+            margin: 0 auto;
+            padding-left: fontsz(44);
+            width: fontsz(274);
+            margin-bottom: fontsz(29);
+            position: relative;
+
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                top: fontsz(20);
+                left: fontsz(19);
+                width: fontsz(7);
+                height: fontsz(7);
+                background-color: $secondary-text-bg-color;
+              
+            
+                @include tablet{
+                  top: fontsz(27.19);
+                  left: fontsz(18);
+                }
+            
+                @include desktop{
+                  width: fontsz(8);
+                  height: fontsz(8);
+                  top: fontsz(28.5);
+                  left: fontsz(20);
+                }
+              }
+
+            &:nth-last-child(1){
+                margin-bottom: 0;
+            }
+
+            @include tablet{
+              margin: 0;
+              margin-bottom: fontsz(31);
+              width: fontsz(150);
+              }
+
+            @include desktop{
+                margin-bottom: fontsz(36);
+                width: fontsz(165);
+            }
+
+            &--1{
+                &::before{
+                    content: "01.";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    font-family: $acromexbold;
+                    font-size: fontsz(16);
+                    line-height: fontsz(19.28);
+                    text-transform: uppercase;
+                
+                    @include tablet{
+                      font-size: fontsz(17);
+                      line-height: fontsz(20.19);
+                    }
+                
+                    @include desktop{
+                      font-size: fontsz(19);
+                      line-height: fontsz(22.5);
+                    }
+                  }
+                  
+              @include tablet{
+                    margin-right: fontsz(20);
+                  }
+            }
+
+            &--2{
+                &::before{
+                    content: "02.";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    font-family: $acromexbold;
+                    font-size: fontsz(16);
+                    line-height: fontsz(19.28);
+                    text-transform: uppercase;
+                
+                    @include tablet{
+                      font-size: fontsz(17);
+                      line-height: fontsz(20.19);
+                    }
+                
+                    @include desktop{
+                      font-size: fontsz(19);
+                      line-height: fontsz(22.5);
+                    } 
+                }
+            }
+            
+            &--3{
+                &::before{
+                    content: "03.";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    font-family: $acromexbold;
+                    font-size: fontsz(16);
+                    line-height: fontsz(19.28);
+                    text-transform: uppercase;
+                
+                    @include tablet{
+
+                      font-size: fontsz(17);
+                      line-height: fontsz(20.19);
+                    }
+                
+                    @include desktop{
+                      font-size: fontsz(19);
+                      line-height: fontsz(22.5);
+                    } 
+                }
+            }
+        }
+
+    &__title{
+          margin: 0;
+          padding: 0;
+          font-family: $acromexbold;
+          line-height: fontsz(19.5);
+          text-transform: uppercase;
+          margin-bottom: fontsz(13);
+
+          @include tablet{
+            font-size: fontsz(9);
+            line-height: fontsz(14.58);
+            margin-bottom: fontsz(11);
+          }
+
+          @include desktop{
+            font-size: fontsz(10);
+            line-height: fontsz(16.25);
+          }
+        }
+
+    &__description{
+        margin: 0;
+        padding: 0;
+        font-family: $acromreg;
+        color: $main-text-color;
+        line-height: fontsz(19.5);
+
+        @include tablet{
+            font-size: fontsz(8);
+          line-height: fontsz(10.09);
+        }
+
+        @include desktop{
+          font-size: fontsz(9);
+          line-height: fontsz(11.25);
+        }
+    }
+  }
+
+  &__etc{
+    margin: 0;
+    padding: 0;
+    padding-left: fontsz(31);
+    margin: 0 auto;
+    width: fontsz(220);
+    font-family: $acrommd;
+    color: $orange-text-color;
+    line-height: fontsz(19.5);
+    text-shadow: $main-text-bg-color 0 0 1px;
+    margin-bottom: fontsz(35);
+    position: relative;
+    
+        @include tablet{
+          position: absolute;
+          margin: 0;
+          font-size: fontsz(9);
+          line-height: fontsz(13.46);
+          padding-left: fontsz(31);
+          width: fontsz(120);
+          bottom: 18%;
+          right: 30%;
+        }
+    
+        @include desktop{
+          font-size: fontsz(10);
+          line-height: fontsz(15);
+          padding-left: fontsz(27);
+        }
+    
+        &::before{
+          content: "";
+          display: block;
+          @include bg-img ("../images/icon/slash.svg");
+          width: fontsz(12);
+          height: fontsz(21);
+          position: absolute;
+          top: fontsz(0);
+          left: fontsz(0);
+    
+          @include tablet{
+            width: fontsz(10);
+            height: fontsz(18);
+            top: fontsz(0);
+            left: fontsz(0);
+          }
+    
+          @include desktop{
+            width: fontsz(12);
+            height: fontsz(20);
+          }
+        }
+  }
+
+  &__btn{
+      @extend %button-orange;
+      width: fontsz(215);
+      height: fontsz(46);
+      font-size: fontsz(11);
+      margin: 0 auto;
+
+      @include tablet{
+        margin: 0;
+        width: fontsz(133);
+        height: fontsz(29);
+        font-size: fontsz(7);
+        position: absolute;
+        bottom: 0%;
+        right: 20%;
+      }
+
+      @include desktop{
+        width: fontsz(148);
+        height: fontsz(32);
+        font-size: fontsz(8);
+      }
+  }
+
+  &__img-block{
+
+    @media screen and (max-width: 767px){
+      display: none;
+    }
+  }
+}
