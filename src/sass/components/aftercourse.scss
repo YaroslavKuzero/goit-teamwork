@@ -30,7 +30,7 @@
         }
     }
 
-    .advantages{
+    .advantage{
         padding: 0;
         margin: 0;
         margin-bottom: fontsz(50);
@@ -152,7 +152,6 @@
                     text-transform: uppercase;
                 
                     @include tablet{
-
                       font-size: fontsz(17);
                       line-height: fontsz(20.19);
                     }
