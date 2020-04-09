@@ -1,16 +1,19 @@
 .doit-go_13{
     position: relative;
     padding-top: fontsz(23);
+    padding-bottom: fontsz(32);
     
   
     @include tablet{
       display: flex;
       justify-content: space-between;
-      padding-bottom: fontsz(96);
+      padding-top: fontsz(49);
+      padding-bottom: fontsz(37);
     }
   
     @include desktop{
-      padding-bottom: fontsz(96);
+      padding-top: fontsz(60);
+      padding-bottom: fontsz(60);
     }
   }
 .doit-go__section13{

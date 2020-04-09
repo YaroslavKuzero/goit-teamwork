@@ -1,3 +1,17 @@
+.section-7{
+    padding-top: fontsz(28);
+    padding-bottom: fontsz(35);
+
+    @include tablet{
+        padding-top: fontsz(56);
+        padding-bottom: fontsz(54);
+    }
+
+    @include desktop{
+        padding-top: fontsz(60);
+        padding-bottom: fontsz(62);
+    }
+}
 .heading {
     @include tablet {
         display: flex;
@@ -30,12 +44,10 @@
 .section-description {
     line-height: fontsz(20);
     font-size: fontsz(14);
-    margin-bottom: fontsz(35);
     @include tablet {
         display: flex;
         line-height: fontsz(15);
         font-size: fontsz(9);
-        margin-bottom: fontsz(80);
     }
     &__image-desk {
         align-self: flex-end;

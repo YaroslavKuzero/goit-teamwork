@@ -1,11 +1,13 @@
 .just-now {
-  padding: 0 0 fontsz(30);
+  padding: fontsz(18) fontsz(38) fontsz(30);
 
   @include tablet {
-    padding-bottom: fontsz(42);
+    padding-top: fontsz(57);
+    padding-bottom: fontsz(55);
   }
 
   @include desktop {
+    padding-top: fontsz(64);
     padding-bottom: fontsz(60);
   }
 
