@@ -17,7 +17,15 @@
     &__photo {
         @include tablet {
         position: absolute;
-        bottom: 9%;
+        right: 25%;
+        z-index: 1;
+        }
+    }
+    &__photo-shadow {
+        @include tablet {
+        position: absolute;
+        bottom: -5%;
+        right: 3%;
         }
     }
     &__text {
