@@ -1,8 +1,15 @@
 .warning-section {
-    margin-bottom: fontsz(70);
+    padding-top: fontsz(40);
+    padding-bottom: fontsz(43);
     @include tablet {
         display: flex;
-        margin-bottom: fontsz(100);
+        padding-top: fontsz(38);
+        padding-bottom: fontsz(54);
+    }
+
+    @include desktop{
+        padding-top: fontsz(61);
+        padding-bottom: fontsz(61);
     }
 }
 .warning-section-image {

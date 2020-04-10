@@ -1,3 +1,17 @@
+.section-11{
+    padding-top: fontsz(37);
+    padding-bottom: fontsz(59);
+
+    @include tablet {
+      padding-top: fontsz(42);
+      padding-bottom: fontsz(39);
+    }
+
+    @include desktop {
+        padding-top: fontsz(58);
+        padding-bottom: fontsz(60);
+    }
+}
 .section-11-heading {
     margin-bottom: fontsz(35);
     @include tablet {
@@ -73,7 +87,6 @@
 .section-11-list {
     @include tablet {
         display: flex;
-        margin-bottom: fontsz(95);
     }
     &__top {
         background-image: url(../images/mobile/Layer_413.png);

@@ -38,6 +38,7 @@
         font-size: 1.93rem;
         line-height: 2.43rem;
         width: fontsz(202);
+        text-align: left;
         margin: 0;
         margin-bottom: fontsz(22);
       }
@@ -91,6 +92,8 @@
         @include desktop {
           font-size: fontsz(333);
           line-height: fontsz(233);
+          top: 0;
+          left: 30%;
         }
       }
 
