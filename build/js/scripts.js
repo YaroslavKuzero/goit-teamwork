@@ -1,0 +1,1 @@
+"use strict";var catalysts=document.querySelectorAll(".button--catalyst"),modal=document.querySelector(".modal"),closeBtn=document.querySelector(".close");catalysts.forEach(function(t){t.addEventListener("click",function(){modal.style.display="block"})}),closeBtn.addEventListener("click",function(){modal.style.display="none"});
