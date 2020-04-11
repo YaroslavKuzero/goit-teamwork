@@ -1,10 +1,9 @@
 # goit-teamwork
 
 * Yaroslav Kuzero - team lead
-* Yevhenii Deina  - mentor
-* Vitalii Tonkovskyi - scrum master
-* Anton Harkavenko - developer
-* Yevhen Yakymenko - developer
+* Anton Harkavenko - mentor
+* Yevhen Yakymenko - scrum-master
+* Vitalii Tonkovskyi - developer
 
 ---
 ---

@@ -21,7 +21,7 @@
             margin-bottom: fontsz(27);
         }
         @include tablet {
-            align-self: start;
+            align-self: flex-start;
         }
     }
     &__heading{
