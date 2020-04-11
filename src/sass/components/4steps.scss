@@ -105,12 +105,14 @@
 
         @include tablet {
           font-size: fontsz(60);
-          top: 35%;
+          top: 38%;
           left: 55%;
         }
 
         @include desktop {
           font-size: fontsz(70);
+          top: 38%;
+          left: 58%;
         }
       }
     

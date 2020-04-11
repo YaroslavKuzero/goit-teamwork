@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-viewBox="0 0 18 29" class="slash">
-<defs>
-<clipPath id="r1zpa">
-<path fill="#000" d="M-.347 29.792V.208h19.694v29.584zm17.48-28.629L1.282 28.101"/>
-</clipPath>
-</defs><g><g opacity="1">
-<path fill="#000" stroke="#000" stroke-miterlimit="20" stroke-width="3.13" d="M17.132 1.163L1.283 28.101" clip-path="url(&quot;#r1zpa&quot;)"/></g></g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 29" class="slash"><defs><clipPath id="r1zpa"><path d="M-.347 29.792V.208h19.694v29.584zm17.48-28.629L1.282 28.101"/></clipPath></defs><path stroke="#000" stroke-miterlimit="20" stroke-width="3.13" d="M17.132 1.163L1.283 28.101" clip-path="url(&quot;#r1zpa&quot;)"/></svg>
